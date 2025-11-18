@@ -1,26 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta name="author" content="ANANDHUKRISHNE for Parakkum Thallika UI TEAM" />
-    <meta name="application-name" content="Parakkum Thallika UI" />
+    <meta name="author" content="ANANDHUKRISHNE" />
+    <meta name="website" content="45|STDioS" />
     <meta name="description"
-        content="This is a trial website developed by the Disaster Drone Management Group for EDUCATIONAL PURPOSES ONLY. Any information regarding this may be obtained by contacting the team-members." />
+        content="This is a Demo website developed for EDUCATIONAL PURPOSES ONLY." />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!----------------------------------------------------------------->
-    <link href="ASSETS/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="ASSETS/css/video.css" rel="stylesheet" />
-
-    <title>Parakkum Thallika UI</title>
+    <link href="ASSETS/css/vanilla.css" rel="stylesheet" /> 
+    <title>
+        45|STDioS - Home
+    </title>
+<link rel="icon" type="image/x-icon" href="Untitled design.jpg" />
+<link href="ASSETS/css/controller.css" rel="stylesheet" />
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
             user-select: none;
         }
-
+        :hover {
+            cursor: pointer;
+            transform: rotate(360);
+        }   
+        header{
+            border-radius: 200px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
@@ -35,182 +45,222 @@
 </head>
 
 <body>
-    <header>
-        <div class="collapse bg-dark" id="navbarHeader">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-md-7 py-4">
-                        <h4 class="text-white">About</h4>
-                        <p class="text-white">
+    <header class="main-header ">
+        <div class="container ">
+            <div class="header-content ">
+
+                <a href="index.html" class="logo-link">
+                    <img loading="lazy"
+                        src="45-stdios bg removed2.png"
+                        alt="45|STDioS Logo"
+                        class="logo-image" />
+                </a>
+                
+                <nav class="desktop-nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-item">Home</a></li>
+                        <li><a href="4-aboutus.html" class="nav-item">About Us</a></li>
+                        <li><a href="2-products.html" class="nav-item">Products</a></li>
+                        <li><a href="3-testimonials.html" class="nav-item">Testimonials</a></li>
+                        <li><a href="5-contactus.html" class="nav-item">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+<img src="reshot-icon-shopping-cart-MV5QHY9F8P.svg" width="50" height="50" />
+                <button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false" id="menu-button">
+                        <span class="bar one"></span>
+                        <span class="bar two"></span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="menu-wrapper">
+                <div class="menu-header">
+                    <a class="logo-link-mobile" href="index.html"> 
+                        <img alt="Logo"
+                            src="ASSETS/css/Screenshot%202025-09-21%20155943.png"
+                            class="logo-mobile" decoding="async">
+                    </a>
+                    <button class="menu-close-button" id="menu-close">&times;</button>
+                </div>
+                
+                <div class="menu-area">
+                    <div class="menu-section">
+                        <h4 class="menu-title">Main Navigation</h4>
+                        <ul class="main-link-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="4-aboutus.html">About Us</a></li>
+                            <li><a href="2-products.html">Products</a></li>
+                            <li><a href="3-testimonials.html">Testimonials</a></li>
+                            <li><a href="5-contactus.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="menu-section">
+                        <h4 class="menu-title">Quick Links</h4>
+                        <ul class="quick-link-list">
+                            <li><a href="4-aboutus.html">Know More About This Project</a></li>
+                            <li><a href="2-products.html">For Mobile 📱</a></li>
+                            <li><a href="3-testimonials.html">For PC 💻</a></li>
+                            <li><a href="5-contactus.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-section contact-info">
+                        <h4 class="menu-title">About "Parakkum Thallika"</h4>
+                        <p class="about-text">
                             This is a trial website developed by the Disaster Drone Management Group for EDUCATIONAL
                             PURPOSES ONLY. Any information regarding this may be obtained by contacting the
                             team-members.
                         </p>
-                    </div>
-                    <div class="col-sm-4 offset-md-1 py-4">
-                        <h4 class="text-white">Contact</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="4-aboutus.html" class="text-white">Know More About This Project</a></li>
-                            <li><a href="2-mobile.html" class="text-white">For Mobile 📱</a></li>
-                            <li><a href="3-pc.html" class="text-white">For PC 💻</a></li>
-                            <li><a href="5-contactus.html" class="text-white">Contact Us</a></li>
-                            <li><a href="6-allvideos.html" class="text-white">View How-to videos</a></li>
-                        </ul>
+                        <div class="media">
+                            <img alt="mail" src="[Placeholder for Email Icon]" class="media-icon">
+                            <div class="media-body">
+                                <h4>Email Us</h4> 
+                                <a href="mailto:contact@yourproject.com">contact@yourproject.com</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!------------------------------------------>
-        <div class="navbar navbar-dark bg-dark shadow-sm">
-            <div class="container">
-                <a href="index.html" class="navbar-brand d-flex align-items-center">
-                    <img src="ASSETS/css/Screenshot%202025-09-21%20155943.png" alt="Logo"
-                        style="height: 30px; width: auto; margin-right: 8px" />
-                    <strong>Parakkum Thallika</strong>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
-                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
             </div>
         </div>
     </header>
+
     <main>
-        <section class="py-5 text-center container">
-            <div class="row py-lg-5">
-                <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Parakkum Thallika</h1>
-                    <p class="lead text-muted">The Flying Saucer</p>
-                    <small class="lead text-muted">Disaster Drone Management UI</small>
-                    <p>
-                        <a href="2-mobile.html" class="btn btn-primary my-2">OPEN</a>
-                        <a href="3-pc.html" class="btn btn-secondary my-2">FOR PC</a>
-                    </p>
-                </div>
-            </div>
-        </section>
-        <div class="album py-5 bg-light">
-            <div class="container">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <div class="video-responsive-container card-img-top">
-                                <iframe width="100%" height="100%"
-                                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0&amp;autoplay=0"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen title="Embedded  Drone ui Simplified Video">
-                                </iframe>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Drone UI Simplified</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
-                                            Share
-                                        </button>
-                                    </div>
-                                    <small class="text-muted">by Anandhukrishne</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <div class="video-responsive-container card-img-top">
-                                <iframe width="100%" height="100%"
-                                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0&amp;autoplay=0"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen title="Embedded  How to operate this during emergency? Video">
-                                </iframe>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">How to operate this during emergency?</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
-                                            Share
-                                        </button>
-                                    </div>
-                                    <small class="text-muted">by Anandhukrishne</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <div class="video-responsive-container card-img-top">
-                                <iframe width="100%" height="100%"
-                                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0&amp;autoplay=0"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen title="Embedded add location/destination Video">
-                                </iframe>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Add location/destination</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
-                                            Share
-                                        </button>
-                                    </div>
-                                    <small class="text-muted">by Anandhukrishne</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <div class="video-responsive-container card-img-top">
-                                <iframe width="100%" height="100%"
-                                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0&amp;autoplay=0"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen title="Embedded Drone UI Simplified Video">
-                                </iframe>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Turn on Autopilot</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
-                                            Share
-                                        </button>
-                                    </div>
-                                    <small class="text-muted">by Anandhukrishne</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        
+    <section class="video-background-section">
+    
+    <video autoplay muted loop playsinline class="background-video">
+        <source src="Our Services.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="content-overlay"> 
+        <div class="container">
+            <div class="hero-content">
+                <h1>Parakkum Thallika</h1>
+                <p class="lead-text">The Flying Saucer</p>
+                <small class="lead-small">Disaster Drone Management UI</small>
+                <div class="hero-actions">
+                    <a href="2-mobile.html" class="button primary">OPEN</a>
+                    <a href="3-pc.html" class="button secondary">FOR PC</a>
                 </div>
             </div>
         </div>
+    </div>
+</section>
+        <div class="video-grid-area">
+            <div class="container">
+                <div class="video-grid">
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="video-responsive-container">
+                                <iframe width="100%" height="100%"
+                                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0&amp;autoplay=0"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen title="Embedded Drone ui Simplified Video">
+                                </iframe>
+                            </div>
+                            <div class="card-content">
+                                <p>Drone UI Simplified</p>
+                                <div class="card-footer">
+                                    <div class="button-group">
+                                        <button type="button" class="button small outline">View</button>
+                                        <button type="button" class="button small outline">Share</button>
+                                    </div>
+                                    <small class="muted-text">by Anandhukrishne</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="video-responsive-container">
+                                <iframe width="100%" height="100%"
+                                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0&amp;autoplay=0"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen title="Embedded Drone ui Simplified Video">
+                                </iframe>
+                            </div>
+                            <div class="card-content">
+                                <p>Drone UI Simplified</p>
+                                <div class="card-footer">
+                                    <div class="button-group">
+                                        <button type="button" class="button small outline">View</button>
+                                        <button type="button" class="button small outline">Share</button>
+                                    </div>
+                                    <small class="muted-text">by Anandhukrishne</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="video-responsive-container">
+                                <iframe width="100%" height="100%"
+                                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0&amp;autoplay=0"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen title="Embedded Drone ui Simplified Video">
+                                </iframe>
+                            </div>
+                            <div class="card-content">
+                                <p>Drone UI Simplified</p>
+                                <div class="card-footer">
+                                    <div class="button-group">
+                                        <button type="button" class="button small outline">View</button>
+                                        <button type="button" class="button small outline">Share</button>
+                                    </div>
+                                    <small class="muted-text">by Anandhukrishne</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
     </main>
-    <footer class="text-muted py-5">
+
+    <footer class="main-footer">
         <div class="container">
-            <p class="float-end mb-1">
-                <button type="button" class="btn btn-sm btn-outline-secondary"
+            <p class="back-to-top">
+                <button type="button" class="button small outline"
                     onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
                     Back to top
                 </button>
             </p>
-            <p class="mb-1">
-                This WEBSITE and its CONTENTS are developed solely for <b>educational and research purposes.</b>This
-                is a trial prototype created for 45-STDIOS .&copy;2025 45-STDIOS. All rights reserved.
+            <p class="copyright-text">
+                This WEBSITE and its CONTENTS are developed solely for <b>educational purposes.</b>This
+                is a trial prototype created for 45-STDioS .&copy;2025 45|STDioS. All rights reserved.
             </p>
-
-            <p class="mb-0">Created with &#9829; in India-Bharata.</p>
+            <p class="author-text">Created with &#9829; in India-Bharata.</p>
         </div>
     </footer>
-    <script src="ASSETS/js/bootstrap.bundle.min.js"></script>
-</body>
-<!-- ------------------------------- -->
+    
+    <script>
+        // Vanilla JavaScript for the Mobile Menu
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.querySelector('.main-header');
+            const menuButton = document.getElementById('menu-button');
+            const menuClose = document.getElementById('menu-close');
 
+            function toggleMenu() {
+                // Toggles the 'is-open' class on the header to reveal the mobile menu (via CSS)
+                header.classList.toggle('is-open'); 
+                const isExpanded = header.classList.contains('is-open');
+                menuButton.setAttribute('aria-expanded', isExpanded);
+            }
+
+            // Attach event listeners
+            if (menuButton) menuButton.addEventListener('click', toggleMenu);
+            if (menuClose) menuClose.addEventListener('click', toggleMenu);
+        });
+    </script>
+</body>
 </html>

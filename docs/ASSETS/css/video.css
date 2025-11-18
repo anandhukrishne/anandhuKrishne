@@ -1,7 +1,5 @@
-/* CSS is crucial for the 16:9 aspect ratio and responsiveness */
 .video-responsive-container {
     position: relative;
-    /* This sets the 16:9 aspect ratio (9 / 16 * 100) */
     padding-bottom: 56.25%; 
     height: 0;
     overflow: hidden;
