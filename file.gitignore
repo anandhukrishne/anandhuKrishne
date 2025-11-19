@@ -1,0 +1,25 @@
+# 1. Dependency Directories
+/node_modules
+/venv
+/vendor
+
+# 2. Build/Output Directories
+/dist
+/build
+/out
+
+# 3. Environment/Secret Files
+.env
+.env.local
+config.local.js
+
+# 4. Logs and Temporary Files
+*.log
+*.tmp
+temp/
+
+# 5. OS and IDE generated files
+.DS_Store
+Thumbs.db
+*.bak
+.vscode/
