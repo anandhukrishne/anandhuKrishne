@@ -1,16 +1,3 @@
-{
-  "env": {
-    "browser": true,
-    "es6": true
-  },
-  "globals": {
-    "bootstrap": "readonly"
-  },
-  "rules": {
-    ...
-  }
-}
-
 document.addEventListener('DOMContentLoaded', () => {
 
   // Power button handler

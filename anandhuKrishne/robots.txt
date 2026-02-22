@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anandhukrishne.tech/sitemap.xml
