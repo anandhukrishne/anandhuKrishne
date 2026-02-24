@@ -1,18 +1,23 @@
-public class j1{
-    static class Student{
-        public String name;
-        public int grades[];
-        private double average;
-        public static int count = 0;
-    public Student(String name, int grades[], double average){
+class Employee{
+    double salary;
+    String name;
+    Employee(String name, double salary){
         this.name = name;
-        this.grades = grades;
-        this.average = average;
-        count++;
+        this.salary = salary;
     }
-    public double getClassAverage(){
-        int total = 0;
-        for(int i = 0; i < Student.count; i++){
-           
-        }
-        return (double) ;
+    void displayEmployeeInfo(){
+        System.out.println("Employee Name: " + name);
+        System.out.println("Employee Salary: " + salary);
+    }
+}
+class Manager extends Employee{
+    String department;
+    Manager(String name, double salary, String department){
+        super(name, salary);
+        this.department = department;
+    }
+    void displayManagerInfo(){
+        displayEmployeeInfo();
+        System.out.println("Department: " + department);
+    }
+}
