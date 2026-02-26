@@ -57,15 +57,59 @@
         }
 
         .testimonial-card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            margin: 20px auto;
-            max-width: 800px;
-            overflow: hidden;
             display: flex;
-            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 25px;
+            background: #fdfdfd;
+            /* Subtle off-white shift */
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #eaeaea;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .testimonial-footer {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            /* Aligns name and buttons to the right */
+            margin-top: 20px;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 12px;
+        }
+
+        .testimonial-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-action {
+            padding: 8px 16px;
+            font-size: 0.85rem;
+            color: var(--primary-blue);
+            border: 1px solid var(--primary-blue);
+            border-radius: 6px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            background: transparent;
+        }
+
+        .btn-action:hover {
+            background: rgba(0, 0, 255, 0.05);
+            /* Very subtle brand blue tint */
+            color: #0000bb;
+            border-color: #0000bb;
+        }
+
 
         .testimonial-content {
             padding: 30px;
@@ -120,10 +164,10 @@
                 <nav class="desktop-nav">
                     <ul class="nav-links">
                         <li><a href="index.html" class="nav-item">Home</a></li>
-                        <li><a href="4-about.html" class="nav-item">About</a></li>
-                        <li><a href="2-products.html" class="nav-item">Projects</a></li>
-                        <li><a href="3-test.html" class="nav-item">Test</a></li>
-                        <li><a href="6-blog.html" class="nav-item">Blog</a></li>
+                        <li><a href="about.html" class="nav-item">About</a></li>
+                        <li><a href="projects.html" class="nav-item">Projects</a></li>
+                        <li><a href="test.html" class="nav-item">Test</a></li>
+                        <li><a href="blog.html" class="nav-item">Blog</a></li>
                     </ul>
                 </nav>
 
@@ -138,6 +182,93 @@
     </header>
 
 
+    <main id="main-content">
+        <section class="hero-section">
+            <h1 class="hero-title">45|STDioS Engineering</h1>
+            <p class="hero-subtitle">High-impact digital solutions developed by Anandhu Krishne.</p>
+        </section>
+
+        <div class="container">
+            <div class="project-grid">
+
+                <article class="testimonial-card">
+                    <figure class="testimonial-image">
+                        <img src="ASSETS/css/image_619492.png" alt="Disaster Drone UI" />
+                    </figure>
+                    <div class="testimonial-content">
+                        <h3 class="testimonial-author">Parakkum Thallika</h3>
+                        <blockquote class="testimonial-quote">
+                            Autonomous Drone Management interface for disaster scenarios. Built with reactive UI logic
+                            for mobile and PC.
+                        </blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-actions">
+                                <a href="https://github.com/45-studios/Parakkum-Thallika" target="_blank"
+                                    class="btn-action">View Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <figure class="testimonial-image">
+                        <img src="ASSETS/css/image_619492.png" alt="Apoorv Branding" />
+                    </figure>
+                    <div class="testimonial-content">
+                        <h3 class="testimonial-author">Apoorv Branding</h3>
+                        <blockquote class="testimonial-quote">
+                            Complete visual identity for the IIIT Kottayam college event, featuring custom comic-style
+                            cutouts and vector assets.
+                        </blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-actions">
+                                <a href="https://anandhukrishne.tech" target="_blank" class="btn-action">Visit
+                                    Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <figure class="testimonial-image">
+                        <img src="ASSETS/css/kattadi.png" alt="Kattadi TMT" />
+                    </figure>
+                    <div class="testimonial-content">
+                        <h3 class="testimonial-author">Kattadi TMT Site</h3>
+                        <blockquote class="testimonial-quote">
+                            "Ith Kattath Aadilla." A high-performance commercial site designed for extreme stability and
+                            SEO dominance.
+                        </blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-actions">
+                                <a href="https://anandhukrishne.tech" target="_blank" class="btn-action">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <figure class="testimonial-image">
+                        <img src="ASSETS/css/45-stdios bg removed2.png" alt="45|STDioS" />
+                    </figure>
+                    <div class="testimonial-content">
+                        <h3 class="testimonial-author">45|STDioS Web Suite</h3>
+                        <blockquote class="testimonial-quote">
+                            The core digital headquarters for our studio. Managing automated enrollments and client test
+                            environments.
+                        </blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-actions">
+                                <a href="https://github.com/anandhukrishne/Web" target="_blank"
+                                    class="btn-action">Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </main>
 
     <footer class="main-footer" style="background: #f9f9f9; padding: 40px 20px; border-top: 1px solid #eee;">
         <div class="container" style="text-align: center;">
@@ -159,10 +290,10 @@
                     <h3>Quick Links</h3>
                     <ul style="list-style: none; padding: 0; line-height: 2;">
                         <li><a href="index.html" style="color: #444; text-decoration: none;">Home</a></li>
-                        <li><a href="4-about.html" style="color: #444; text-decoration: none;">About</a></li>
-                        <li><a href="2-products.html" style="color: #444; text-decoration: none;">Projects</a></li>
-                        <li><a href="6-blog.html" class="nav-item">Blog</a></li>
-                        <li><a href="5-privacy.html" style="color: #444; text-decoration: none;">Privacy Policy</a></li>
+                        <li><a href="about.html" style="color: #444; text-decoration: none;">About</a></li>
+                        <li><a href="projects.html" style="color: #444; text-decoration: none;">Projects</a></li>
+                        <li><a href="blog.html" class="nav-item">Blog</a></li>
+                        <li><a href="privacy.html" style="color: #444; text-decoration: none;">Privacy Policy</a></li>
                     </ul>
                 </div>
 

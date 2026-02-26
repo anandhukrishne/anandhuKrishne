@@ -8,35 +8,35 @@
   </url>
   
   <url>
-    <loc>https://anandhukrishne.tech/2-projects.html</loc>
+    <loc>https://anandhukrishne.tech/projects.html</loc>
     <lastmod>2026-02-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://anandhukrishne.tech/6-blog.html</loc>
+    <loc>https://anandhukrishne.tech/blog.html</loc>
     <lastmod>2026-02-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://anandhukrishne.tech/4-about.html</loc>
+    <loc>https://anandhukrishne.tech/about.html</loc>
     <lastmod>2026-02-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://anandhukrishne.tech/5-contactus.html</loc>
+    <loc>https://anandhukrishne.tech/test.html</loc>
     <lastmod>2026-02-24</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.5</priority>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
   </url>
 
+ 
   <url>
-    <loc>https://anandhukrishne.tech/5-privacy.html</loc>
+    <loc>https://anandhukrishne.tech/privacy.html</loc>
     <lastmod>2026-02-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

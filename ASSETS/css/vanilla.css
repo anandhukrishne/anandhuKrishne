@@ -574,7 +574,48 @@ a {
         text-align: right;
     }
 }
+.search-container {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    border-radius: 25px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid transparent;
+}
 
+/* When the container is "active", it grows and shows the border */
+.search-container.active {
+    background: #fff;
+    border: 1px solid var(--primary-blue);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#searchInput {
+    width: 0;
+    border: none;
+    outline: none;
+    padding: 0;
+    background: transparent;
+    transition: all 0.4s ease;
+    font-size: 0.9rem;
+    opacity: 0;
+}
+
+/* The "Life" transition */
+.search-container.active #searchInput {
+    width: 200px;
+    padding: 0 10px;
+    opacity: 1;
+}
+
+#searchBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 5px;
+}
 
 /* --- Desktop (min-width: 1024px) --- */
 @media (min-width: 1024px) {

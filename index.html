@@ -120,18 +120,22 @@
                 <nav class="desktop-nav">
                     <ul class="nav-links">
                         <li><a href="index.html" class="nav-item">Home</a></li>
-                        <li><a href="4-about.html" class="nav-item">About</a></li>
-                        <li><a href="2-products.html" class="nav-item">Projects</a></li>
-                        <li><a href="3-test.html" class="nav-item">Test</a></li>
-                        <li><a href="6-blog.html" class="nav-item">Blog</a></li>
+                        <li><a href="about.html" class="nav-item">About</a></li>
+                        <li><a href="projects.html" class="nav-item">Projects</a></li>
+                        <li><a href="test.html" class="nav-item">Test</a></li>
+                        <li><a href="blog.html" class="nav-item">Blog</a></li>
                     </ul>
                 </nav>
 
                 <div class="header-actions">
-                    <button aria-label="Search" style="background:none; border:none; cursor:pointer;">
-                        <img src="ASSETS/css/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" width="40" height="40"
-                            alt="Search Icon" />
-                    </button>
+                    <div class="search-container" id="searchContainer">
+                        <input type="text" id="searchInput" placeholder="Search projects..."
+                            aria-label="Search projects">
+                        <button id="searchBtn" aria-label="Toggle Search">
+                            <img src="ASSETS/css/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" width="30"
+                                alt="Search" />
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,12 +145,13 @@
         <section class="hero-section">
             <h1 class="hero-title">AnandhuKrishne</h1>
             <p class="hero-subtitle">Student at IIIT Kottayam<br>
-            I created this website to showcase my portfolio, test run projects, and share my work with the world.</p>
+                I created this website to showcase my portfolio, test run projects, and share my work with the world.
+            </p>
             <div class="hero-buttons">
-                <a href="2-products.html" class="button large primary"
+                <a href="projects.html" class="button large primary"
                     style="background: var(--primary-blue); color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; margin-right: 10px; display: inline-block;">Explore
                     My projects</a>
-                <a href="4-about.html#contact" class="button large secondary"
+                <a href="about.html#contact" class="button large secondary"
                     style="border: 2px solid var(--primary-blue); color: white; padding: 13px 28px; text-decoration: none; border-radius: 8px; display: inline-block;">Contact</a>
             </div>
         </section>
@@ -186,7 +191,7 @@
                 </div>
             </article>
 
-            <a href="2-products.html" class="button fill"
+            <a href="projects.html" class="button fill"
                 style="background-color: var(--primary-blue); color: white; display: inline-block; padding: 12px 25px; text-decoration: none; border-radius: 5px; margin-top: 20px;">View
                 All Products</a>
         </section>
@@ -223,7 +228,7 @@
                 empower businesses and individuals alike.
             </p>
             <br>
-            <a href="4-about.html" class="button fill"
+            <a href="about.html" class="button fill"
                 style="background-color: var(--primary-blue); color: white; display: inline-block; padding: 12px 25px; text-decoration: none; border-radius: 5px;">Learn
                 More</a>
         </section>
@@ -232,7 +237,7 @@
             style="text-align: center; background-color: coral; color: white;">
             <h2 class="section-title" style="color: white;">Get in Touch</h2>
             <p style="margin-bottom: 25px;">Have questions or need more information? We're here to help!</p>
-            <a href="4-about.html#contact"
+            <a href="about.html#contact"
                 style="background: white; color: coral; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold;">Contact
                 Us</a>
         </section>
@@ -258,11 +263,11 @@
                     <h3>Quick Links</h3>
                     <ul style="list-style: none; padding: 0; line-height: 2;">
                         <li><a href="index.html" style="color: #444; text-decoration: none;">Home</a></li>
-                        <li><a href="4-about.html" style="color: #444; text-decoration: none;">About</a></li>
-                        <li><a href="2-products.html" style="color: #444; text-decoration: none;">Projects</a></li>
-                        <li><a href="3-test.html" style="color: #444; text-decoration: none;">Test</a></li>
-                        <li><a href="6-blog.html" class="nav-item">Blog</a></li>
-                        <li><a href="5-privacy.html" style="color: #444; text-decoration: none;">Privacy Policy</a></li>
+                        <li><a href="about.html" style="color: #444; text-decoration: none;">About</a></li>
+                        <li><a href="projects.html" style="color: #444; text-decoration: none;">Projects</a></li>
+                        <li><a href="test.html" style="color: #444; text-decoration: none;">Test</a></li>
+                        <li><a href="blog.html" class="nav-item">Blog</a></li>
+                        <li><a href="privacy.html" style="color: #444; text-decoration: none;">Privacy Policy</a></li>
                     </ul>
                 </div>
 
@@ -297,6 +302,7 @@
             </div>
         </div>
     </footer>
+    <script src="ASSETS/js/new.js"></script>
 </body>
 
 </html>

@@ -4,19 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AnandhuKrishne - Home | Web Developer & IIITK Student</title>
+    <title>Blog - AnandhuKrishne | Tech, DSA & Engineering</title>
 
-    <link rel="canonical" href="https://anandhukrishne.tech/" />
+    <link rel="canonical" href="https://anandhukrishne.tech/blog.html" />
     <meta name="author" content="AnandhuKrishne" />
     <meta name="description"
-        content="I created this website to showcase my portfolio, test run projects, and share my work with the world." />
-
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="AnandhuKrishne" />
-    <meta property="og:description"
-        content="I created this website to showcase my portfolio, test run projects, and share my work with the world." />
-    <meta property="og:image" content="https://anandhukrishne.tech/ASSETS/css/Untitled design.jpg" />
-    <meta property="og:url" content="https://anandhukrishne.tech/" />
+        content="Read technical articles on Java, Data Structures, and Computer Architecture by Anandhu Krishne." />
 
     <link rel="icon" type="image/x-icon" href="ASSETS/css/Untitled design.jpg" />
     <link href="ASSETS/css/vanilla.css" rel="stylesheet" />
@@ -88,6 +81,62 @@
             gap: 20px;
         }
 
+        .blog-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Blog Grid */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .blog-post {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-content {
+            padding: 20px;
+        }
+
+        .blog-tag {
+            color: var(--primary-blue);
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .blog-title {
+            font-size: 1.4rem;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .blog-excerpt {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .read-more {
+            text-decoration: none;
+            color: var(--primary-blue);
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
         .skip-link {
             position: absolute;
             top: -40px;
@@ -106,7 +155,6 @@
 </head>
 
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header class="main-header">
         <div class="container">
@@ -120,10 +168,10 @@
                 <nav class="desktop-nav">
                     <ul class="nav-links">
                         <li><a href="index.html" class="nav-item">Home</a></li>
-                        <li><a href="4-about.html" class="nav-item">About</a></li>
-                        <li><a href="2-products.html" class="nav-item">Projects</a></li>
-                        <li><a href="3-test.html" class="nav-item">Test</a></li>
-                        <li><a href="6-blog.html" class="nav-item">Blog</a></li>
+                        <li><a href="about.html" class="nav-item">About</a></li>
+                        <li><a href="projects.html" class="nav-item">Projects</a></li>
+                        <li><a href="test.html" class="nav-item">Test</a></li>
+                        <li><a href="blog.html" class="nav-item">Blog</a></li>
                     </ul>
                 </nav>
 
@@ -137,13 +185,50 @@
         </div>
     </header>
 
+    <main class="blog-container">
+        <header style="text-align: center; margin-bottom: 50px;">
+            <h1 style="font-size: 2.5rem; margin-bottom: 10px;">The Engineering Log</h1>
+            <p style="color: #666;">Notes on Computer Science, Web Dev, and Life at IIIT Kottayam.</p>
+        </header>
 
+        <div class="blog-grid">
+            <article class="blog-post">
+                <div class="blog-content">
+                    <span class="blog-tag">Computer Architecture</span>
+                    <h2 class="blog-title">Mastering MIPS: Understanding `sw` and `lw` Instructions</h2>
+                    <p class="blog-excerpt">Deep diving into memory management and data transfer in MIPS assembly
+                        language for COA mid-sem prep.</p>
+                    <a href="#" class="read-more">Read Full Post →</a>
+                </div>
+            </article>
+
+            <article class="blog-post">
+                <div class="blog-content">
+                    <span class="blog-tag">Data Structures</span>
+                    <h2 class="blog-title">Evaluating Postfix Expressions using the Shunting Yard Algorithm</h2>
+                    <p class="blog-excerpt">A step-by-step guide to converting infix to postfix and why it matters for
+                        efficient computation.</p>
+                    <a href="#" class="read-more">Read Full Post →</a>
+                </div>
+            </article>
+
+            <article class="blog-post">
+                <div class="blog-content">
+                    <span class="blog-tag">Web Development</span>
+                    <h2 class="blog-title">Building 45|STDioS: Why I Chose Vanilla CSS</h2>
+                    <p class="blog-excerpt">Lessons learned from building a professional portfolio and project showcase
+                        from scratch.</p>
+                    <a href="#" class="read-more">Read Full Post →</a>
+                </div>
+            </article>
+        </div>
+    </main>
 
     <footer class="main-footer" style="background: #f9f9f9; padding: 40px 20px; border-top: 1px solid #eee;">
         <div class="container" style="text-align: center;">
             <button type="button" class="button small outline"
                 onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
-                style="padding: 10px 20px; cursor: pointer; border: 1px solid #ccc; background: white;">
+                style="padding: 10px 20px; cursor: pointer; border: 1px solid #ccc; background: #00000056;">
                 Back to top
             </button>
 
@@ -159,10 +244,10 @@
                     <h3>Quick Links</h3>
                     <ul style="list-style: none; padding: 0; line-height: 2;">
                         <li><a href="index.html" style="color: #444; text-decoration: none;">Home</a></li>
-                        <li><a href="4-about.html" style="color: #444; text-decoration: none;">About</a></li>
-                        <li><a href="2-products.html" style="color: #444; text-decoration: none;">Projects</a></li>
-                        <li><a href="6-blog.html" style="color: #444; text-decoration: none;">Blog</a></li>
-                        <li><a href="5-privacy.html" style="color: #444; text-decoration: none;">Privacy Policy</a></li>
+                        <li><a href="about.html" style="color: #444; text-decoration: none;">About</a></li>
+                        <li><a href="projects.html" style="color: #444; text-decoration: none;">Projects</a></li>
+                        <li><a href="blog.html" style="color: #444; text-decoration: none;">Blog</a></li>
+                        <li><a href="privacy.html" style="color: #444; text-decoration: none;">Privacy Policy</a></li>
                     </ul>
                 </div>
 
