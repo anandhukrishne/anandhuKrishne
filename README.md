@@ -1,25 +1,12 @@
-anandhukrishne.tech 🚀
+<p align="center">anandhukrishne.tech 🚀</p>
 <p align="center">
-<img src="https://anandhukrishne.tech/assets/logo.png" alt="Anandhu Krishne Logo" width="120px" style="border-radius: 50%;">
+<img src="https://anandhukrishne.tech/assets/css/logo.png" alt="Anandhu Krishne Logo" width="120px" style="border-radius: 50%;">
 
 
 <b>Personal Portfolio & Engineering Log</b>
 
 
 <i>Built with Vanilla CSS and ❤️ in India-Bharata</i>
-</p>
-
-<p align="center">
-  <P>Contact Me:</P>
-<a href="https://linkedin.com/in/anandhukrishne">
-<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-</a>
-<a href="https://github.com/anandhukrishne">
-<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-</a>
-<a href="mailto:anandhukrishne@gmail.com">
-<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
-</a>
 </p>
 
 👋 About Me
@@ -62,19 +49,31 @@ Mastering MIPS: Understanding sw and lw Instructions
 
 Data Structures: Evaluating Postfix Expressions using the Shunting Yard Algorithm
 
-Web Development: Why I Chose Vanilla CSS for 45|STDioS
+Web Development: <a href="https://anandhukrishne.tech/blog.html/wicvcssf45s"> Why I Chose Vanilla CSS for 45|STDioS </a>
 
 📊 GitHub Stats
 <p align="left">
 <img src="https://github-readme-stats.vercel.app/api?username=anandhukrishne&show_icons=true&theme=transparent" alt="Anandhu's GitHub Stats" />
 </p>
 
-🤝 Connect with Me
-LinkedIn: Anandhu Krishne
-
-Instagram: anandhu.krishne
-
-Website: anandhukrishne.tech
+🤝 <p align="center">
+  <P>Contact Me:</P>
+<a href="https://linkedin.com/in/anandhukrishne">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+</a>
+<a href="https://github.com/anandhukrishne">
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</a>
+<a href="mailto:anandhukrishne@gmail.com">
+<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+</a>
+<a href="https://www.instagram.com/anandhu.krishne">
+<img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+</a>
+<a href="https://x.com/AnandhuKrishne">
+<img src="https://img.shields.io/twitter/follow/AnandhuKrishne?style=social&label=Follow" alt="X/Twitter">
+</a>
+</p>
 
 <p align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=100&section=footer" />
@@ -92,5 +91,7 @@ Open index.html in your browser.
 No build steps required — keeping it lightweight and vanilla.
 
 © 2025 Anandhu Krishne & 45|STDioS. Created with ♥ in India.
-
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Anandhu%20Krishne&fontSize=70" />
+</p>
 
