@@ -1,49 +1,95 @@
-Parakkum Thallika (The Flying Saucer) - Disaster Drone Management UI Prototype.
+anandhukrishne.tech 🚀
+<p align="center">
+<img src="https://anandhukrishne.tech/assets/logo.png" alt="Anandhu Krishne Logo" width="120px" style="border-radius: 50%;">
 
-Overview"Parakkum Thallika" is an educational and research prototype for a Disaster Drone Management 
 
-User Interface (UI). Developed by the Disaster Drone Management Group for 45-STDIOS, this project serves as a conceptual model for operating and managing autonomous drones in emergency and disaster scenarios.
+<b>Personal Portfolio & Engineering Log</b>
 
-NOTE: This website and its contents are developed solely for educational and research purposes. This is not a live operational system.
 
-Key Features (Prototype Goals)Platform Specific UIs: Dedicated interfaces optimized for Mobile (2-mobile.html) and PC (3-pc.html) use.
+<i>Built with Vanilla CSS and ❤️ in India-Bharata</i>
+</p>
 
-Intuitive Control: Core UI elements designed to simulate basic drone functions such as Autopilot control and location/destination setting.
+<p align="center">
+<a href="https://linkedin.com/in/anandhukrishne">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+</a>
+<a href="https://github.com/anandhukrishne">
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</a>
+<a href="mailto:anandhukrishne@gmail.com">
+<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+</a>
+</p>
 
-Real-time Monitoring Mockup: Placeholder sections for viewing simulated drone status, video feeds, and system diagnostics.
+👋 About Me
+I am Anandhu Krishne, a Cyber Security undergraduate at IIIT Kottayam. I am passionate about bridging the gap between complex engineering concepts and intuitive web design. This website serves as my digital garden where I document my journey through Data Structures, Computer Architecture, and Cybersecurity.
 
-Setup and Access :This project is deployed via GitHub Pages and requires no local setup to view.
+🎯 Currently Focusing: Mastering MIPS Assembly and advanced DSA.
 
-Access the Live Site:Go to: https://45-studios.github.io/Parakkum-Thallika/
+🛡️ Cybersec Enthusiast: Active participant in CTFs (Capture The Flag).
 
-View Specific Interfaces:Mobile Interface: /2-mobile.htmlPC Interface: /3-pc.html
+🎨 Design Minimalist: Believer in the power of Vanilla CSS and tactile UI.
 
-Contributing ;While this project is primarily for educational prototyping, contributions or feedback are welcome.
+🎤 Design team, TAD: Volunteered to design for Apoorv'26
 
-Contact :For further information regarding this project, please contact the development team through the contact details provided on the site's "Contact Us" page.
+🛠️ Tech Stack & Tools
+<p align="left">
+<a href="https://skillicons.dev">
+<img src="https://skillicons.dev/icons?i=html,css,js,c,py,figma,ubuntu,git,vscode" />
+</a>
+</p>
 
-©2025 45-STDIOS. All rights reserved. 
+Frontend: HTML5, Vanilla CSS (45|STDioS Design System).
 
-Created with ♥ in India-Bharata.
+Systems & DSA: C, MIPS Assembly, Shunting Yard Algorithm.
 
-Acknowledgments and Code Contributions
+Design: Figma (Ben Day dots, custom vector icons).
 
-This project was built upon collaborative effort and leveraging open-source resources, which is essential for rapid prototyping and learning.
+Environment: Ubuntu Linux, Git workflows.
 
-Core Code Reference (Remote Control Interface)We extend our sincere gratitude to ui-code for their foundational work on remote control interfaces.
+🌟 Key Features of the Site
+The Engineering Log: Deep dives into technical topics like sw and lw instructions in MIPS or Postfix expression evaluation.
 
-The structure and conceptual basis for the control panel elements in this project were inspired by and modified from the open-source code found here:Repository: ui-code/RemoteControl
+Responsive Design: Optimized for both Desktop and Mobile interfaces (2-mobile.html / 3-pc.html logic).
 
-Contribution: The index.html and style.css files from this repository provided a critical starting point for developing the responsive and tactile control UI necessary for the drone interface.
+Project Showcase: Featuring prototypes like Parakkum Thallika (Disaster Drone Management UI).
 
-AI AssistanceThe development process for this project was significantly enhanced through the use of generative AI tools.
+Non-Commercial: Developed solely for educational and research purposes.
 
-AI Model (Gemini): This assistance was provided by Gemini, a large language model from Google.
+📝 Recent Blog Posts
+Mastering MIPS: Understanding sw and lw Instructions
 
-Contribution: Gemini provided support in several critical areas, including:Generating the initial README and project documentation.Offering structural critique and review of the deployed website.
+Data Structures: Evaluating Postfix Expressions using the Shunting Yard Algorithm
 
-Providing best practices guidance on web development, security (e.g., .env file management), and Git workflows.
+Web Development: Why I Chose Vanilla CSS for 45|STDioS
 
-This combination of open-source inspiration and AI-powered development assistance allowed the team to focus on the unique educational aspects of the Disaster Drone Management UI.
+📊 GitHub Stats
+<p align="left">
+<img src="https://github-readme-stats.vercel.app/api?username=anandhukrishne&show_icons=true&theme=transparent" alt="Anandhu's GitHub Stats" />
+</p>
 
-Thank you for using this software
+🤝 Connect with Me
+LinkedIn: Anandhu Krishne
+
+Instagram: anandhu.krishne
+
+Website: anandhukrishne.tech
+
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=100&section=footer" />
+</p>
+
+⚙️ Local Development
+To view the site locally:
+
+Clone the repository:
+
+Bash
+git clone https://github.com/anandhukrishne/anandhukrishne.github.io.git
+Open index.html in your browser.
+
+No build steps required — keeping it lightweight and vanilla.
+
+© 2025 Anandhu Krishne & 45|STDioS. Created with ♥ in India.
+
+
