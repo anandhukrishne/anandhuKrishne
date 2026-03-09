@@ -10,6 +10,7 @@ anandhukrishne.tech 🚀
 </p>
 
 <p align="center">
+  <P>Contact Me:</P>
 <a href="https://linkedin.com/in/anandhukrishne">
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
 </a>
@@ -43,11 +44,11 @@ Frontend: HTML5, Vanilla CSS (45|STDioS Design System).
 
 Systems & DSA: C, MIPS Assembly, Shunting Yard Algorithm.
 
-Design: Figma (Ben Day dots, custom vector icons).
+Design: Figma (Ben Day dots-themes, comic styled).
 
 Environment: Ubuntu Linux, Git workflows.
 
-🌟 Key Features of the Site
+🌟 Key Features of the Site I've made in past:
 The Engineering Log: Deep dives into technical topics like sw and lw instructions in MIPS or Postfix expression evaluation.
 
 Responsive Design: Optimized for both Desktop and Mobile interfaces (2-mobile.html / 3-pc.html logic).
