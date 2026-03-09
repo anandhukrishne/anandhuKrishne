@@ -1,6 +1,9 @@
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Anandhu%20Krishne&fontSize=70" />
+</p>
 <p align="center">anandhukrishne.tech 🚀</p>
 <p align="center">
-<img src="https://anandhukrishne.tech/assets/css/logo.png" alt="Anandhu Krishne Logo" width="120px" style="border-radius: 50%;">
+<img src="https://anandhukrishne.tech/ASSETS/css/45-stdios bg removed2.png" alt="Anandhu Krishne/45 STDioS Logo" width="120px" style="border-radius: 50%;">
 
 
 <b>Personal Portfolio & Engineering Log</b>
@@ -75,10 +78,6 @@ Web Development: <a href="https://anandhukrishne.tech/blog.html/wicvcssf45s"> Wh
 </a>
 </p>
 
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=100&section=footer" />
-</p>
-
 ⚙️ Local Development
 To view the site locally:
 
@@ -91,7 +90,7 @@ Open index.html in your browser.
 No build steps required — keeping it lightweight and vanilla.
 
 © 2025 Anandhu Krishne & 45|STDioS. Created with ♥ in India.
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Anandhu%20Krishne&fontSize=70" />
-</p>
 
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=100&section=footer" />
+</p>
