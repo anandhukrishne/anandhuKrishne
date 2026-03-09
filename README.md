@@ -56,8 +56,8 @@ Web Development: <a href="https://anandhukrishne.tech/blog.html/wicvcssf45s"> Wh
 <img src="https://github-readme-stats.vercel.app/api?username=anandhukrishne&show_icons=true&theme=transparent" alt="Anandhu's GitHub Stats" />
 </p>
 
-🤝 <p align="center">
-  <P>Contact Me:</P>
+<p align="center">
+  <P>🤝 Contact Me:</P>
 <a href="https://linkedin.com/in/anandhukrishne">
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
 </a>
@@ -85,7 +85,7 @@ To view the site locally:
 Clone the repository:
 
 Bash
-git clone https://github.com/anandhukrishne/anandhukrishne.github.io.git
+git clone https://github.com/anandhukrishne/anandhuKrishne
 Open index.html in your browser.
 
 No build steps required — keeping it lightweight and vanilla.
