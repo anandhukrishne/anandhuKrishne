@@ -12,16 +12,16 @@
 <i>Built with Vanilla CSS and ❤️ in India-Bharata</i>
 </p>
 
-👋 About Me
-I am Anandhu Krishne, a Cyber Security undergraduate at IIIT Kottayam. I am passionate about bridging the gap between complex engineering concepts and intuitive web design. This website serves as my digital garden where I document my journey through Data Structures, Computer Architecture, and Cybersecurity.
+About Me
+I'm Anandhu Krishne, a IIIT Kottayam undergraduate studying cyber security. I have a strong desire to close the gap between intricate engineering ideas and user-friendly web design. I use this website as a digital garden where I record my experiences with cybersecurity, computer architecture, and data structures.
 
-🎯 Currently Focusing: Mastering MIPS Assembly and advanced DSA.
+🎯 Right now, I'm concentrating on learning advanced DSA and MIPS Assembly.
 
-🛡️ Cybersec Enthusiast: Active participant in CTFs (Capture The Flag).
+🛡️ Cybersecurity Fanatic: Engaged in CTFs (Capture the Flag).
 
-🎨 Design Minimalist: Believer in the power of Vanilla CSS and tactile UI.
+🎨 Design Minimalist: I think tactile user interface and vanilla CSS are powerful.
 
-🎤 Design team, TAD: Volunteered to design for Apoorv'26
+🎤 TAD design team: Volunteered to create designs for Apoorv'26
 
 🛠️ Tech Stack & Tools
 <p align="left">
@@ -38,19 +38,19 @@ Design: Figma (Ben Day dots-themes, comic styled).
 
 Environment: Ubuntu Linux, Git workflows.
 
-🌟 Key Features of the Site I've made in past:
-The Engineering Log: Deep dives into technical topics like sw and lw instructions in MIPS or Postfix expression evaluation.
+🌟 Important aspects of the website I've previously created:
+The Engineering Log delves deeply into technical subjects such as postfix expression evaluation or sw and lw instructions in MIPS.
 
-Responsive Design: Optimized for both Desktop and Mobile interfaces (2-mobile.html / 3-pc.html logic).
+With 2-mobile.html and 3-pc.html logic, responsive design is optimised for both desktop and mobile interfaces.
 
-Project Showcase: Featuring prototypes like Parakkum Thallika (Disaster Drone Management UI).
+Project Showcase: Including prototypes such as the Disaster Drone Management User Interface (Parakkum Thallika).
 
-Non-Commercial: Developed solely for educational and research purposes.
+Non-Commercial: Created exclusively for research and teaching.
 
-📝 Recent Blog Posts
-Mastering MIPS: Understanding sw and lw Instructions
+📝 Current Blog Posts
+Learning MIPS: Comprehending SW and LW Instructions
 
-Data Structures: Evaluating Postfix Expressions using the Shunting Yard Algorithm
+Data Structures: Applying the Shunting Yard Algorithm to Postfix Expression Evaluation
 
 Web Development: <a href="https://anandhukrishne.tech/blog.html/wicvcssf45s"> Why I Chose Vanilla CSS for 45|STDioS </a>
 
@@ -85,6 +85,7 @@ Clone the repository:
 
 Bash
 git clone https://github.com/anandhukrishne/anandhuKrishne
+
 Open index.html in your browser.
 
 No build steps required — keeping it lightweight and vanilla.
