@@ -91,6 +91,7 @@ Open index.html in your browser.
 No build steps required — keeping it lightweight and vanilla.
 
 © 2025 Anandhu Krishne & 45|STDioS. Created with ♥ in India.
+<img width="1200" height="675" alt="gitcity-anandhukrishne-landscape" src="https://github.com/user-attachments/assets/575fdf8f-cdc7-44e9-967f-34556edc45e7" />
 
 <p align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=100&section=footer" />
