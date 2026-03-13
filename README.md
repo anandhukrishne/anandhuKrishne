@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Anandhu%20Krishne&fontSize=70" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=AnandhuKrishne&fontSize=70" />
 </p>
 <p align="center">anandhukrishne.tech 🚀</p>
 <p align="center">
@@ -13,9 +13,7 @@
 </p>
 
 About Me
-I'm Anandhu Krishne, a IIIT Kottayam undergraduate studying cyber security. I have a strong desire to close the gap between intricate engineering ideas and user-friendly web design. I use this website as a digital garden where I record my experiences with cybersecurity, computer architecture, and data structures.
-
-🎯 Right now, I'm concentrating on learning advanced DSA and MIPS Assembly.
+I'm AnandhuKrishne, a IIIT Kottayam undergraduate studying cyber security. I have a strong desire to close the gap between intricate engineering ideas and user-friendly web design. I use this website as a digital garden where I record my experiences with cybersecurity, computer architecture, and data structures.
 
 🛡️ Cybersecurity Fanatic: Engaged in CTFs (Capture the Flag).
 
@@ -30,7 +28,7 @@ I'm Anandhu Krishne, a IIIT Kottayam undergraduate studying cyber security. I ha
 </a>
 </p>
 
-Frontend: HTML5, Vanilla CSS (45|STDioS Design System).
+Frontend: HTML5, Vanilla CSS3 (45|STDioS Design System).
 
 Systems & DSA: C, MIPS Assembly, Shunting Yard Algorithm.
 
@@ -39,9 +37,8 @@ Design: Figma (Ben Day dots-themes, comic styled).
 Environment: Ubuntu Linux, Git workflows.
 
 🌟 Important aspects of the website I've previously created:
-The Engineering Log delves deeply into technical subjects such as postfix expression evaluation or sw and lw instructions in MIPS.
 
-With 2-mobile.html and 3-pc.html logic, responsive design is optimised for both desktop and mobile interfaces.
+Responsive: With 2-mobile.html and 3-pc.html logic, responsive design is optimised for both desktop and mobile interfaces.
 
 Project Showcase: Including prototypes such as the Disaster Drone Management User Interface (Parakkum Thallika).
 
@@ -88,10 +85,9 @@ git clone https://github.com/anandhukrishne/anandhuKrishne
 
 Open index.html in your browser.
 
-No build steps required — keeping it lightweight and vanilla.
+No build steps required — keeping it lightweight and vanilla😉.
 
-© 2025 Anandhu Krishne & 45|STDioS. Created with ♥ in India.
-<img width="1200" height="675" alt="gitcity-anandhukrishne-landscape" src="https://github.com/user-attachments/assets/575fdf8f-cdc7-44e9-967f-34556edc45e7" />
+© 2026 AnandhuKrishne & 45|STDioS. Created with ♥ in India. 
 
 <p align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=100&section=footer" />
