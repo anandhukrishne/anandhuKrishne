@@ -24,11 +24,11 @@ I'm AnandhuKrishne, a IIIT Kottayam undergraduate studying cyber security. I hav
 🛠️ Tech Stack & Tools
 <p align="left">
 <a href="https://skillicons.dev">
-<img src="https://skillicons.dev/icons?i=html,css,js,c,py,figma,ubuntu,git,vscode, php" />
+<img src="https://skillicons.dev/icons?i=html,css,js,c,py,figma,ubuntu,git,vscode,php" />
 </a>
 </p>
 
-Frontend: HTML5, Vanilla CSS3 (45|STDioS Design System).
+Frontend: HTML5, Vanilla CSS3, PHP, JavaScript (45|STDioS Design System).
 
 Systems & DSA: C, MIPS Assembly, Shunting Yard Algorithm.
 
