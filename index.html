@@ -20,8 +20,13 @@
 
     <link rel="icon" type="image/x-icon" href="ASSETS/css/Untitled design.jpg" />
     <link href="ASSETS/css/vanilla.css" rel="stylesheet" />
-
+    <link href="ASSETS/css/portfolio.css" rel="stylesheet" />
+    <link href="ASSETS/css/futuristic-footer.css" rel="stylesheet" />
     <style>
+        body {
+            overflow-x: hidden;
+        }
+
         :root {
             --primary-blue: rgba(0, 0, 255, 0.70);
             --accent-coral: #ff7f50;
@@ -106,19 +111,29 @@
 </head>
 
 <body>
+    <!-- Portfolio Preloader -->
+    <div id="port-preloader">
+        <div class="google-loader">
+            <svg viewBox="25 25 50 50">
+                <circle class="track" cx="50" cy="50" r="20" />
+                <circle class="spin" cx="50" cy="50" r="20" />
+            </svg>
+        </div>
+    </div>
+
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header class="main-header">
         <div class="container">
             <div class="header-content"
-                style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0;">
+                style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
                 <a href="index.html" class="logo-link">
                     <img loading="lazy" src="ASSETS/css/45-stdios bg removed2.png" alt="45|STDioS Logo"
                         class="logo-image" width="120" />
                 </a>
 
                 <nav class="desktop-nav">
-                    <ul class="nav-links">
+                    <ul class="nav-links" style="display: flex; list-style: none; gap: 20px; font-weight: 500;">
                         <li><a href="index.html" class="nav-item">Home</a></li>
                         <li><a href="about.html" class="nav-item">About</a></li>
                         <li><a href="projects.html" class="nav-item">Projects</a></li>
@@ -127,182 +142,213 @@
                     </ul>
                 </nav>
 
-                <div class="header-actions">
-                    <div class="search-container" id="searchContainer">
-                        <input type="text" id="searchInput" placeholder="Search projects..."
-                            aria-label="Search projects">
-                        <button id="searchBtn" aria-label="Toggle Search">
-                            <img src="ASSETS/css/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" width="30"
-                                alt="Search" />
-                        </button>
-                    </div>
+                <div class="header-actions" style="display: flex; align-items: center; gap: 15px;">
+
+                    <button aria-label="Search" style="background:none; border:none; cursor:pointer;">
+                        <img src="ASSETS/css/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" width="30" height="30"
+                            alt="Search Icon" />
+                    </button>
+                    <button class="mobile-menu-btn" aria-label="Toggle Menu"
+                        style="display: none; background:none; border:none; cursor:pointer;">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
+
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Project Grid</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="test.html" class="nav-item">Software Tests</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main id="main-content">
-        <section class="hero-section">
-            <h1 class="hero-title">AnandhuKrishne</h1>
-            <p class="hero-subtitle">Student at IIIT Kottayam<br>
-                I created this website to showcase my portfolio, test run projects, and share my work with the world.
-            </p>
-            <div class="hero-buttons">
-                <a href="projects.html" class="button large primary"
-                    style="background: var(--primary-blue); color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; margin-right: 10px; display: inline-block;">Explore
-                    My projects</a>
-                <a href="about.html#contact" class="button large secondary"
-                    style="border: 2px solid var(--primary-blue); color: white; padding: 13px 28px; text-decoration: none; border-radius: 8px; display: inline-block;">Contact</a>
-            </div>
-        </section>
+    <!-- Theme Toggle Floating Button -->
+    <button id="portThemeToggle" aria-label="Toggle Theme">🌙</button>
 
-        <section id="products" class="section-padding" style="text-align: center; background-color: blanchedalmond;">
-            <h2 class="section-title">My Projects</h2>
-            <p class="section-subtitle">Innovative solutions designed to meet your needs.</p>
-
-            <article class="testimonial-card">
-                <figure class="testimonial-image" style="flex: 0 0 250px; margin: 0;">
-                    <img src="ASSETS/css/Screenshot 2025-11-26 104136.png" alt="Beta Web Package box"
-                        style="width: 100%; height: 100%; object-fit: cover;" />
-                </figure>
-                <div class="testimonial-content">
-                    <blockquote class="testimonial-quote">
-                        <strong>Beta Web Package:</strong> Ideal for growing businesses. Includes advanced design,
-                        enhanced SEO, lifetime free hosting, and up to 5 custom emails (Offer valid until 31st Dec
-                        2025).
-                    </blockquote>
-                    <p class="testimonial-author" style="font-weight: bold; color: var(--primary-blue);">₹11,999 / $299
-                        USD (Limited time)</p>
-                </div>
-            </article>
-
-            <article class="testimonial-card">
-                <figure class="testimonial-image" style="flex: 0 0 250px; margin: 0;">
-                    <img src="ASSETS/css/Screenshot 2025-11-26 110722.png" alt="Basic Web Package box"
-                        style="width: 100%; height: 100%; object-fit: cover;" />
-                </figure>
-                <div class="testimonial-content">
-                    <blockquote class="testimonial-quote">
-                        <strong>Web Basic Package:</strong> Perfect for startups. Includes a professional website,
-                        essential SEO setup, and reliable hosting.
-                    </blockquote>
-                    <p class="testimonial-author" style="font-weight: bold; color: var(--primary-blue);">₹7,999 / $199
-                        USD</p>
-                </div>
-            </article>
-
-            <a href="projects.html" class="button fill"
-                style="background-color: var(--primary-blue); color: white; display: inline-block; padding: 12px 25px; text-decoration: none; border-radius: 5px; margin-top: 20px;">View
-                All Products</a>
-        </section>
-
-        <section class="section-padding" style="text-align: center; background-color: cornflowerblue; color: white;">
-            <h2 class="section-title" style="color: white;">What Our Clients Say</h2>
-
-            <article class="testimonial-card" style="color: #333;">
-                <div class="testimonial-content">
-                    <blockquote class="testimonial-quote">
-                        "Extremely attentive to our needs. They delivered the website faster than the official
-                        timelines. Highly recommend!"
-                    </blockquote>
-                    <p class="testimonial-author">- Sethumadhavan, Founder of Dakshayani Biscuits</p>
-                </div>
-            </article>
-
-            <article class="testimonial-card" style="color: #333;">
-                <div class="testimonial-content">
-                    <blockquote class="testimonial-quote">
-                        "I am extremely satisfied with the website 45|STDioS created. It helped me attract more
-                        customers and grow my brand."
-                    </blockquote>
-                    <p class="testimonial-author">- Komal V., CFO of noon.com</p>
-                </div>
-            </article>
-        </section>
-
-        <section class="section-padding" style="text-align: center;">
-            <h2 class="section-title">About 45|STDioS</h2>
-            <p class="section-subtitle" style="max-width: 800px; margin: 0 auto; color: #555;">
-                Founded in 2025, we empower businesses through technology. Led by ReBEL, we are committed to social
-                responsibility and sustainable growth. We started with a mission to deliver innovative solutions that
-                empower businesses and individuals alike.
-            </p>
-            <br>
-            <a href="about.html" class="button fill"
-                style="background-color: var(--primary-blue); color: white; display: inline-block; padding: 12px 25px; text-decoration: none; border-radius: 5px;">Learn
-                More</a>
-        </section>
-
-        <section id="contactus" class="section-padding"
-            style="text-align: center; background-color: coral; color: white;">
-            <h2 class="section-title" style="color: white;">Get in Touch</h2>
-            <p style="margin-bottom: 25px;">Have questions or need more information? We're here to help!</p>
-            <a href="about.html#contact"
-                style="background: white; color: coral; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold;">Contact
-                Us</a>
-        </section>
-    </main>
-
-    <footer class="main-footer" style="background: #f9f9f9; padding: 40px 20px; border-top: 1px solid #eee;">
-        <div class="container" style="text-align: center;">
-            <button type="button" class="button small outline"
-                onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
-                style="padding: 10px 20px; cursor: pointer; border: 1px solid #ccc; background: white;">
-                Back to top
-            </button>
-
-            <div class="footer-content-grid"
-                style="margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: space-around; gap: 30px; text-align: left;">
-                <div style="flex: 1; min-width: 200px;">
-                    <img src="ASSETS/css/45-stdios bg removed2.png" alt="45|STDioS Logo" width="120" />
-                    <p style="font-size: 0.9rem; color: #777;">Innovative solutions for businesses and individuals.
-                        Built at IIIT Kottayam.</p>
-                </div>
-
-                <div style="flex: 1; min-width: 150px;">
-                    <h3>Quick Links</h3>
-                    <ul style="list-style: none; padding: 0; line-height: 2;">
-                        <li><a href="index.html" style="color: #444; text-decoration: none;">Home</a></li>
-                        <li><a href="about.html" style="color: #444; text-decoration: none;">About</a></li>
-                        <li><a href="projects.html" style="color: #444; text-decoration: none;">Projects</a></li>
-                        <li><a href="test.html" style="color: #444; text-decoration: none;">Test</a></li>
-                        <li><a href="blog.html" class="nav-item">Blog</a></li>
-                        <li><a href="privacy.html" style="color: #444; text-decoration: none;">Privacy Policy</a></li>
-                    </ul>
-                </div>
-
-                <div style="flex: 1; min-width: 200px;">
-                    <h3>Connect</h3>
-                    <p>Email: <a href="mailto:anandhukrishne@gmail.com"
-                            style="color: var(--primary-blue);">anandhukrishne@gmail.com</a></p>
-                    <p>Phone: <a href="tel:+918320382088" style="color: var(--primary-blue);">+91 8320382088</a></p>
-
-                    <div class="social-icons" style="margin-top: 15px;">
-                        <a href="https://github.com/anandhukrishne" target="_blank"><img
-                                src="ASSETS/css/github-svgrepo-com.svg" alt="GitHub" width="30"></a>
-                        <a href="https://x.com/AnandhuKrishne" target="_blank"><img
-                                src="ASSETS/css/twitter-1-svgrepo-com.svg" alt="X" width="30"></a>
-                        <a href="https://www.linkedin.com/in/anandhukrishne/" target="_blank"><img
-                                src="ASSETS/css/linkedin.webp" alt="LinkedIn" width="30"></a>
-                        <a href="https://www.facebook.com/anandhu.krishne" target="_blank"><img
-                                src="ASSETS/css/facebook.webp" alt="Facebook" width="30"></a>
-                        <a href="https://www.instagram.com/anandhu.krishne/" target="_blank"><img
-                                src="ASSETS/css/instagram-svgrepo-com.svg" alt="Instagram" width="30"></a>
+    <main id="portfolio-main">
+        <section class="port-hero">
+            <div class="port-container">
+                <div class="port-hero-content">
+                    <h1 class="port-title">AnandhuKrishne</h1>
+                    <p class="port-subtitle">Student at IIIT Kottayam.<br>I created this website to showcase my
+                        portfolio, test run projects, and share my work with the world.</p>
+                    <div class="port-hero-actions">
+                        <a href="projects.html" class="port-btn port-btn-primary">Explore My Projects</a>
+                        <a href="about.html#contact" class="port-btn port-btn-secondary">Get In Touch</a>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="footer-bottom" style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd;">
-                <img src="ASSETS/css/image.png" alt="45 STDioS Badge" width="150" style="margin-bottom: 15px;" />
-                <p style="font-size: 0.85rem; color: #999;">
-                    This WEBSITE and its CONTENTS are developed solely for <b>non-commercial purposes.</b><br>
-                    &copy; 2025 AnandhuKrishne & 45|STDioS. All rights reserved.
+        <section id="products" class="port-section">
+            <div class="port-container">
+                <h2 class="port-section-title">Featured Projects</h2>
+                <p class="port-section-subtitle">Innovative solutions engineered to meet modern needs.</p>
+
+                <div class="port-grid">
+                    <article class="port-card">
+                        <div class="port-card-img-wrapper">
+                            <img loading="lazy" src="ASSETS/css/Screenshot 2025-11-26 104136.png" class="port-card-img"
+                                alt="Beta Web Package box" />
+                        </div>
+                        <div class="port-card-body">
+                            <h3 class="port-card-title">Beta Web Package</h3>
+                            <p class="port-card-desc">
+                                Ideal for growing businesses. Includes dynamic premium design, enhanced SEO, lifetime
+                                free hosting, and custom emails (Offer valid until 31st Dec 2025).
+                            </p>
+                            <p class="port-price">₹11,999 / $299 USD</p>
+                        </div>
+                    </article>
+
+                    <article class="port-card">
+                        <div class="port-card-img-wrapper">
+                            <img loading="lazy" src="ASSETS/css/Screenshot 2025-11-26 110722.png" class="port-card-img"
+                                alt="Basic Web Package box" />
+                        </div>
+                        <div class="port-card-body">
+                            <h3 class="port-card-title">Web Basic Package</h3>
+                            <p class="port-card-desc">
+                                Perfect for startups. Get a highly responsive professional website, essential SEO setup,
+                                and reliable hosting.
+                            </p>
+                            <p class="port-price">₹7,999 / $199 USD</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="projects.html" class="port-btn port-btn-secondary">View All Products</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="port-section" style="background-color: var(--port-surface);">
+            <div class="port-container">
+                <h2 class="port-section-title">Client Satisfaction</h2>
+                <p class="port-section-subtitle">What organizations say about 45|STDioS.</p>
+
+                <div class="port-grid">
+                    <article class="port-card"
+                        style="background: transparent; border-color: var(--port-border); box-shadow: none;">
+                        <div class="port-card-body">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--port-primary)"
+                                style="margin-bottom: 1rem;">
+                                <path
+                                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                            </svg>
+                            <p class="port-card-desc" style="font-style: italic; font-size: 1.1rem; line-height: 1.8;">
+                                "Extremely attentive to our needs. They delivered the website faster than the official
+                                timelines. Highly recommend!"
+                            </p>
+                            <p style="color: var(--port-tertiary); font-weight: 600; margin-bottom: 0;">- Sethumadhavan
+                            </p>
+                            <p style="font-size: 0.9rem; margin-top: 0.2rem;">Founder, Dakshayani Biscuits</p>
+                        </div>
+                    </article>
+
+                    <article class="port-card"
+                        style="background: transparent; border-color: var(--port-border); box-shadow: none;">
+                        <div class="port-card-body">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--port-primary)"
+                                style="margin-bottom: 1rem;">
+                                <path
+                                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                            </svg>
+                            <p class="port-card-desc" style="font-style: italic; font-size: 1.1rem; line-height: 1.8;">
+                                "I am extremely satisfied with the website 45|STDioS created. It helped me attract more
+                                customers and grow my brand."
+                            </p>
+                            <p style="color: var(--port-tertiary); font-weight: 600; margin-bottom: 0;">- Komal V.</p>
+                            <p style="font-size: 0.9rem; margin-top: 0.2rem;">CFO, noon.com</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="port-section">
+            <div class="port-container" style="text-align: center;">
+                <h2 class="port-section-title">About 45|STDioS</h2>
+                <p class="port-section-subtitle">
+                    Founded in 2025, we empower businesses through technology. Led by ReBEL, we are committed to social
+                    responsibility and sustainable digital growth. We started with a mission to deliver innovative
+                    solutions that empower businesses and individuals alike.
                 </p>
-                <p style="font-size: 0.9rem;">Created with &#9829; in India-Bharata.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="about.html" class="port-btn port-btn-primary">Learn More</a>
+                    <a href="about.html#contact" class="port-btn port-btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="futuristic-footer">
+        <div class="port-container" style="text-align: center;">
+            <button type="button" class="port-btn port-btn-secondary back-to-top-btn"
+                onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;">
+                    <path d="M12 19V5M5 12l7-7 7 7" />
+                </svg>
+                Back to Top
+            </button>
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <img loading="lazy" src="ASSETS\css\image.webp" alt="45|STDioS Logo" class="footer-logo" />
+                    <p class="footer-tagline">Open-source engineering & innovative digital solutions.<br><span
+                            class="highlight-text">Built at IIIT Kottayam.</span></p>
+                </div>
+                <div class="footer-col links-col">
+                    <h3 class="footer-heading">Nav Systems</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Project Grid</a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col connect-col">
+                    <h3 class="footer-heading">Comms Link</h3>
+                    <p>Mail: <a href="mailto:anandhukrishne@gmail.com" class="link-glow">anandhukrishne@gmail.com</a>
+                    </p>
+                    <p>Mobile: <a href="tel:+918320382088" class="link-glow">+91 8320382088</a></p>
+                    <div class="social-mesh">
+                        <a href="https://github.com/anandhukrishne" target="_blank" aria-label="GitHub"><img
+                                src="ASSETS/css/github-svgrepo-com.svg" alt="GitHub"></a>
+                        <a href="https://x.com/AnandhuKrishne" target="_blank" aria-label="X (Twitter)"><img
+                                src="ASSETS/css/twitter-1-svgrepo-com.svg" alt="X"></a>
+                        <a href="https://www.linkedin.com/in/anandhukrishne/" target="_blank" aria-label="LinkedIn"><img
+                                src="ASSETS/css/linkedin.webp" alt="LinkedIn"></a>
+                        <a href="https://www.facebook.com/anandhu.krishne/" target="_blank" aria-label="Facebook"><img
+                                src="ASSETS/css/facebook.webp" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/anandhu.krishne/" target="_blank" aria-label="Instagram"><img
+                                src="ASSETS/css/instagram-svgrepo-com.svg" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright-text">This WEBSITE and its CONTENTS are developed solely for non-commercial
+                    purposes.
+                    &copy; 2026 AnandhuKrishne & 45|STDioS. All rights reserved.</p>
+                <p>Created with &hearts; in India-Bharata.</p>
             </div>
         </div>
     </footer>
     <script src="ASSETS/js/new.js"></script>
+    <script src="ASSETS/js/portfolio.js"></script>
 </body>
 
 </html>

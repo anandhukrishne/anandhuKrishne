@@ -1,172 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog - AnandhuKrishne | Tech, DSA & Engineering</title>
 
-    <link rel="canonical" href="https://anandhukrishne.tech/blog.html" />
-    <meta name="author" content="AnandhuKrishne" />
-    <meta name="description"
-        content="Read technical articles on Java, Data Structures, and Computer Architecture by Anandhu Krishne." />
-
+    <title>Blog - 45|STDioS</title>
     <link rel="icon" type="image/x-icon" href="ASSETS/css/Untitled design.jpg" />
     <link href="ASSETS/css/vanilla.css" rel="stylesheet" />
-
-    <style>
-        :root {
-            --primary-blue: rgba(0, 0, 255, 0.70);
-            --accent-coral: #ff7f50;
-        }
-
-        body {
-            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            scroll-behavior: smooth;
-        }
-
-        .hero-section {
-            padding: 100px 20px;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            text-align: center;
-        }
-
-        .hero-title {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        .hero-subtitle {
-            font-size: 1.2rem;
-            color: #666;
-            margin-bottom: 30px;
-        }
-
-        .section-padding {
-            padding: 60px 20px;
-        }
-
-        .testimonial-card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            margin: 20px auto;
-            max-width: 800px;
-            overflow: hidden;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .testimonial-content {
-            padding: 30px;
-            flex: 1;
-            text-align: left;
-        }
-
-        .social-icons img {
-            transition: transform 0.3s ease;
-            margin: 0 5px;
-        }
-
-        .social-icons img:hover {
-            transform: translateY(-5px);
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 20px;
-        }
-
-        .blog-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        /* Blog Grid */
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .blog-post {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
-        }
-
-        .blog-post:hover {
-            transform: translateY(-5px);
-        }
-
-        .blog-content {
-            padding: 20px;
-        }
-
-        .blog-tag {
-            color: var(--primary-blue);
-            font-size: 0.8rem;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        .blog-title {
-            font-size: 1.4rem;
-            margin: 10px 0;
-            color: #333;
-        }
-
-        .blog-excerpt {
-            color: #666;
-            font-size: 0.95rem;
-            margin-bottom: 20px;
-        }
-
-        .read-more {
-            text-decoration: none;
-            color: var(--primary-blue);
-            font-weight: bold;
-            font-size: 0.9rem;
-        }
-
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #000;
-            color: white;
-            padding: 8px;
-            z-index: 100;
-            transition: top 0.3s;
-        }
-
-        .skip-link:focus {
-            top: 0;
-        }
-    </style>
+    <link href="ASSETS/css/portfolio.css" rel="stylesheet" />
+    <link href="ASSETS/css/futuristic-footer.css" rel="stylesheet" />
 </head>
-
 <body>
-
-    <header class="main-header">
+    <div id="port-preloader">
+        <div class="google-loader">
+            <svg viewBox="25 25 50 50">
+                <circle class="track" cx="50" cy="50" r="20" />
+                <circle class="spin" cx="50" cy="50" r="20" />
+            </svg>
+        </div>
+    </div>
+    
+        <header class="main-header">
         <div class="container">
-            <div class="header-content"
-                style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0;">
+            <div class="header-content" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
                 <a href="index.html" class="logo-link">
-                    <img loading="lazy" src="ASSETS/css/45-stdios bg removed2.png" alt="45|STDioS Logo"
-                        class="logo-image" width="120" />
+                    <img loading="lazy" src="ASSETS/css/45-stdios bg removed2.png" alt="45|STDioS Logo" class="logo-image" width="120" />
                 </a>
 
                 <nav class="desktop-nav">
-                    <ul class="nav-links">
+                    <ul class="nav-links" style="display: flex; list-style: none; gap: 20px; font-weight: 500;">
                         <li><a href="index.html" class="nav-item">Home</a></li>
                         <li><a href="about.html" class="nav-item">About</a></li>
                         <li><a href="projects.html" class="nav-item">Projects</a></li>
@@ -175,113 +37,130 @@
                     </ul>
                 </nav>
 
-                <div class="header-actions">
-                    <button aria-label="Search" style="background:none; border:none; cursor:pointer;">
-                        <img src="ASSETS/css/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" width="40" height="40"
-                            alt="Search Icon" />
+                <div class="header-actions" style="display: flex; align-items: center; gap: 15px;">
+                    <style>
+        body { overflow-x: hidden; }
+
+                        @media (max-width: 750px) {
+                            .desktop-only-icon { display: none !important; }
+                        }
+                    </style>
+                    <button  aria-label="Search" style="background:none; border:none; cursor:pointer;">
+                        <img src="ASSETS/css/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" width="30" height="30" alt="Search Icon" />
+                    </button>
+                    <button class="mobile-menu-btn" aria-label="Toggle Menu" style="display: none; background:none; border:none; cursor:pointer;">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
                     </button>
                 </div>
             </div>
         </div>
+        
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Project Grid</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="test.html" class="nav-item">Software Tests</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="blog-container">
-        <header style="text-align: center; margin-bottom: 50px;">
-            <h1 style="font-size: 2.5rem; margin-bottom: 10px;">The Engineering Log</h1>
-            <p style="color: #666;">Notes on Computer Science, Web Dev, and Life at IIIT Kottayam.</p>
-        </header>
+    <button id="portThemeToggle" aria-label="Toggle Theme">🌙</button>
 
-        <div class="blog-grid">
-            <article class="blog-post">
-                <div class="blog-content">
-                    <span class="blog-tag">Computer Architecture</span>
-                    <h2 class="blog-title">Mastering MIPS: Understanding `sw` and `lw` Instructions</h2>
-                    <p class="blog-excerpt">Deep diving into memory management and data transfer in MIPS assembly
-                        language for COA mid-sem prep.</p>
-                    <a href="#" class="read-more">Read Full Post →</a>
+    <main id="portfolio-main">
+        <section class="port-hero" style="min-height: 40vh;">
+            <div class="port-container" style="text-align: center;">
+                <div class="port-hero-content">
+                    <h1 class="port-title" style="font-size: 3rem;">Engineering Manifest</h1>
+                    <p class="port-subtitle">Articles on Architecture, Data Structures, & Clean Code.</p>
                 </div>
-            </article>
+            </div>
+        </section>
 
-            <article class="blog-post">
-                <div class="blog-content">
-                    <span class="blog-tag">Data Structures</span>
-                    <h2 class="blog-title">Evaluating Postfix Expressions using the Shunting Yard Algorithm</h2>
-                    <p class="blog-excerpt">A step-by-step guide to converting infix to postfix and why it matters for
-                        efficient computation.</p>
-                    <a href="#" class="read-more">Read Full Post →</a>
-                </div>
-            </article>
+        <section class="port-section" style="padding-top: 0;">
+            <div class="port-container">
+                <div class="port-grid">
+                    
+                    <article class="port-card">
+                        <div class="port-card-body">
+                            <span style="display:inline-block; font-size: 0.8rem; text-transform:uppercase; font-weight:600; color:var(--port-primary); margin-bottom: 0.5rem;">Systems Architecture</span>
+                            <h3 class="port-card-title">Mastering MIPS: Understanding `sw` & `lw`</h3>
+                            <p class="port-card-desc">Deep diving into memory management and data transfer limits in pure MIPS assembly. Prep notes on cache allocation.</p>
+                            <a href="#" class="port-btn port-btn-secondary" style="margin-top: 1rem;">Execute Read →</a>
+                        </div>
+                    </article>
 
-            <article class="blog-post">
-                <div class="blog-content">
-                    <span class="blog-tag">Web Development</span>
-                    <h2 class="blog-title">Building 45|STDioS: Why I Chose Vanilla CSS</h2>
-                    <p class="blog-excerpt">Lessons learned from building a professional portfolio and project showcase
-                        from scratch.</p>
-                    <a href="#" class="read-more">Read Full Post →</a>
+                    <article class="port-card">
+                        <div class="port-card-body">
+                            <span style="display:inline-block; font-size: 0.8rem; text-transform:uppercase; font-weight:600; color:var(--port-primary); margin-bottom: 0.5rem;">Data Structures</span>
+                            <h3 class="port-card-title">Evaluating Postfix via Shunting Yard</h3>
+                            <p class="port-card-desc">A step-by-step unrolling of infix-to-postfix conversion and why AST stacks matter for compiler efficiency.</p>
+                            <a href="#" class="port-btn port-btn-secondary" style="margin-top: 1rem;">Execute Read →</a>
+                        </div>
+                    </article>
+
+                    <article class="port-card">
+                        <div class="port-card-body">
+                            <span style="display:inline-block; font-size: 0.8rem; text-transform:uppercase; font-weight:600; color:var(--port-primary); margin-bottom: 0.5rem;">Web Engineering</span>
+                            <h3 class="port-card-title">Why 45|STDioS Opts for Core Vanilla CSS</h3>
+                            <p class="port-card-desc">Lessons analyzed from moving away from utility-heavy frameworks toward structured variable-driven design models.</p>
+                            <a href="#" class="port-btn port-btn-secondary" style="margin-top: 1rem;">Execute Read →</a>
+                        </div>
+                    </article>
+
                 </div>
-            </article>
-        </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="main-footer" style="background: #f9f9f9; padding: 40px 20px; border-top: 1px solid #eee;">
-        <div class="container" style="text-align: center;">
-            <button type="button" class="button small outline"
-                onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
-                style="padding: 10px 20px; cursor: pointer; border: 1px solid #ccc; background: #00000056;">
-                Back to top
+   <footer class="futuristic-footer">
+        <div class="port-container" style="text-align: center;">
+            <button type="button" class="port-btn port-btn-secondary back-to-top-btn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+                Back to orbit
             </button>
-
-            <div class="footer-content-grid"
-                style="margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: space-around; gap: 30px; text-align: left;">
-                <div style="flex: 1; min-width: 200px;">
-                    <img src="ASSETS/css/45-stdios bg removed2.png" alt="45|STDioS Logo" width="120" />
-                    <p style="font-size: 0.9rem; color: #777;">Innovative solutions for businesses and individuals.
-                        Built at IIIT Kottayam.</p>
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <img loading="lazy" src="ASSETS\css\image.webp" alt="45|STDioS Logo" class="footer-logo" />
+                    <p class="footer-tagline">Open-source engineering & innovative digital solutions.<br><span class="highlight-text">Built at IIIT Kottayam.</span></p>
                 </div>
-
-                <div style="flex: 1; min-width: 150px;">
-                    <h3>Quick Links</h3>
-                    <ul style="list-style: none; padding: 0; line-height: 2;">
-                        <li><a href="index.html" style="color: #444; text-decoration: none;">Home</a></li>
-                        <li><a href="about.html" style="color: #444; text-decoration: none;">About</a></li>
-                        <li><a href="projects.html" style="color: #444; text-decoration: none;">Projects</a></li>
-                        <li><a href="blog.html" style="color: #444; text-decoration: none;">Blog</a></li>
-                        <li><a href="privacy.html" style="color: #444; text-decoration: none;">Privacy Policy</a></li>
+                <div class="footer-col links-col">
+                    <h3 class="footer-heading">Nav Systems</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Project Grid</a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
-
-                <div style="flex: 1; min-width: 200px;">
-                    <h3>Connect</h3>
-                    <p>Email: <a href="mailto:anandhukrishne@gmail.com"
-                            style="color: var(--primary-blue);">anandhukrishne@gmail.com</a></p>
-                    <p>Phone: <a href="tel:+918320382088" style="color: var(--primary-blue);">+91 8320382088</a></p>
-
-                    <div class="social-icons" style="margin-top: 15px;">
-                        <a href="https://github.com/anandhukrishne" target="_blank"><img
-                                src="ASSETS/css/github-svgrepo-com.svg" alt="GitHub" width="30"></a>
-                        <a href="https://x.com/AnandhuKrishne" target="_blank"><img
-                                src="ASSETS/css/twitter-1-svgrepo-com.svg" alt="X" width="30"></a>
-                        <a href="https://www.linkedin.com/in/anandhukrishne/" target="_blank"><img
-                                src="ASSETS/css/linkedin.webp" alt="LinkedIn" width="30"></a>
-                        <a href="https://www.facebook.com/anandhu.krishne" target="_blank"><img
-                                src="ASSETS/css/facebook.webp" alt="Facebook" width="30"></a>
-                        <a href="https://www.instagram.com/anandhu.krishne/" target="_blank"><img
-                                src="ASSETS/css/instagram-svgrepo-com.svg" alt="Instagram" width="30"></a>
+                <div class="footer-col connect-col">
+                    <h3 class="footer-heading">Comms Link</h3>
+                    <p>Mail: <a href="mailto:anandhukrishne@gmail.com" class="link-glow">anandhukrishne@gmail.com</a></p>
+                    <p>Mobile: <a href="tel:+918320382088" class="link-glow">+91 8320382088</a></p>
+                    <div class="social-mesh">
+                        <a href="https://github.com/anandhukrishne" target="_blank" aria-label="GitHub"><img src="ASSETS/css/github-svgrepo-com.svg" alt="GitHub"></a>
+                        <a href="https://x.com/AnandhuKrishne" target="_blank" aria-label="X (Twitter)"><img src="ASSETS/css/twitter-1-svgrepo-com.svg" alt="X"></a>
+                        <a href="https://www.linkedin.com/in/anandhukrishne/" target="_blank" aria-label="LinkedIn"><img src="ASSETS/css/linkedin.webp" alt="LinkedIn"></a>
+                        <a href="https://www.facebook.com/anandhu.krishne/" target="_blank" aria-label="Facebook"><img src="ASSETS/css/facebook.webp" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/anandhu.krishne/" target="_blank" aria-label="Instagram"><img src="ASSETS/css/instagram-svgrepo-com.svg" alt="Instagram"></a>
                     </div>
                 </div>
             </div>
-
-            <div class="footer-bottom" style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd;">
-                <img src="ASSETS/css/image.png" alt="45 STDioS Badge" width="150" style="margin-bottom: 15px;" />
-                <p style="font-size: 0.85rem; color: #999;">
-                    This WEBSITE and its CONTENTS are developed solely for <b>non-commercial purposes.</b><br>
-                    &copy; 2025 AnandhuKrishne & 45|STDioS. All rights reserved.
-                </p>
-                <p style="font-size: 0.9rem;">Created with &#9829; in India-Bharata.</p>
+            <div class="footer-bottom">
+                <p class="copyright-text">This WEBSITE and its CONTENTS are developed solely for non-commercial purposes.
+                    &copy; 2026 AnandhuKrishne & 45|STDioS. All rights reserved.</p>
+                <p>Created with &hearts; in India-Bharata.</p>
             </div>
         </div>
     </footer>
+    <script src="ASSETS/js/new.js"></script>
+    <script src="ASSETS/js/portfolio.js"></script>
 </body>
-
 </html>
