@@ -162,3 +162,65 @@
     letter-spacing: 1px;
     color: #cbd5e1;
 }
+
+/* --- Light Mode Overrides --- */
+[data-port-theme="light"] .futuristic-footer {
+    background: #f8fafc;
+    color: #475569;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+[data-port-theme="light"] .futuristic-footer .footer-heading {
+    color: #0f172a;
+}
+
+[data-port-theme="light"] .futuristic-footer a.link-glow,
+[data-port-theme="light"] .links-col a {
+    color: #64748b;
+}
+
+[data-port-theme="light"] .futuristic-footer a.link-glow:hover,
+[data-port-theme="light"] .links-col a:hover {
+    color: var(--port-primary, #2563eb);
+    text-shadow: none;
+}
+
+[data-port-theme="light"] .back-to-top-btn {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    color: #0f172a !important;
+}
+
+[data-port-theme="light"] .back-to-top-btn:hover {
+    background: #f1f5f9 !important;
+    color: var(--port-primary, #2563eb) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+[data-port-theme="light"] .social-mesh a {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+[data-port-theme="light"] .social-mesh a:hover {
+    background: var(--port-primary, #2563eb);
+    border-color: var(--port-primary, #2563eb);
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+}
+
+[data-port-theme="light"] .social-mesh img {
+    filter: invert(0.2);
+}
+
+[data-port-theme="light"] .social-mesh a:hover img {
+    filter: invert(1);
+}
+
+[data-port-theme="light"] .footer-logo {
+    filter: drop-shadow(0 0 8px rgba(37, 99, 235, 0.2));
+}
+
+[data-port-theme="light"] .creator-stamp {
+    color: #475569;
+}
+

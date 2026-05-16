@@ -3,7 +3,7 @@
 </p>
 <p align="center">anandhukrishne.tech 🚀</p>
 <p align="center">
-<img src="https://anandhukrishne.tech/ASSETS/css/45-stdios bg removed2.png" alt="Anandhu Krishne/45 STDioS Logo" width="120px" style="border-radius: 50%;">
+<img src="https://anandhukrishne.tech/ASSETS/css/wht_no_bg45_logo.svg" alt="Anandhu Krishne/45 STDioS Logo" width="120px" style="border-radius: 50%;">
 
 
 <b>Personal Portfolio & Engineering Log</b>

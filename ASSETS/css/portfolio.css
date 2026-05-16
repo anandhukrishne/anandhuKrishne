@@ -2,29 +2,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
 
 :root {
-    --port-bg: #0f172a; /* Slate 900 */
-    --port-surface: #1e293b; /* Slate 800 */
+    --port-bg: #030712; /* Deep Dark Space */
+    --port-surface: #0f172a; /* Slate 900 */
     --port-text: #f8fafc;
     --port-text-muted: #94a3b8;
-    --port-primary: #0ea5e9; /* Electric Blue */
-    --port-primary-hover: #0284c7;
-    --port-tertiary: #fde047; /* Lemon Yellow */
-    --port-border: #334155;
-    --port-glass-bg: rgba(30, 41, 59, 0.7);
-    --port-glass-border: rgba(255, 255, 255, 0.1);
+    --port-primary: #00f0ff; /* Neon Electric Blue */
+    --port-primary-hover: #00b8ff;
+    --port-tertiary: #fbff00; /* Neon Lemon Yellow */
+    --port-border: #1e293b;
+    --port-glass-bg: rgba(15, 23, 42, 0.6);
+    --port-glass-border: rgba(0, 240, 255, 0.15);
+    
+    /* Advanced UI Variables */
+    --port-card-bg: rgba(15, 23, 42, 0.7);
+    --port-card-bg-light: rgba(15, 23, 42, 0.4);
+    --port-card-border: rgba(0, 240, 255, 0.2);
+    --port-card-border-light: rgba(255, 255, 255, 0.05);
+    --port-shadow-glow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    --port-badge-bg: rgba(0, 240, 255, 0.05);
+    --port-badge-border: rgba(0, 240, 255, 0.3);
+    --port-text-glow: 0 0 30px rgba(0, 240, 255, 0.6);
+    --port-avatar-text: #000;
+    --port-quote-mark: rgba(0, 240, 255, 0.08);
 }
 
 [data-port-theme="light"] {
     --port-bg: #f8fafc;
     --port-surface: #ffffff;
-    --port-text: #0f172a;
+    --port-text: #020617;
     --port-text-muted: #475569;
-    --port-primary: #0284c7;
-    --port-primary-hover: #0369a1;
+    --port-primary: #2563eb; /* Vibrant energetic blue */
+    --port-primary-hover: #1d4ed8;
     --port-tertiary: #eab308;
-    --port-border: #e2e8f0;
-    --port-glass-bg: rgba(255, 255, 255, 0.8);
-    --port-glass-border: rgba(0, 0, 0, 0.1);
+    --port-border: #cbd5e1;
+    --port-glass-bg: rgba(255, 255, 255, 0.85);
+    --port-glass-border: rgba(0, 0, 0, 0.05);
+    
+    /* Advanced UI Variables for Light Mode */
+    --port-card-bg: #ffffff;
+    --port-card-bg-light: #ffffff;
+    --port-card-border: rgba(37, 99, 235, 0.15);
+    --port-card-border-light: rgba(0, 0, 0, 0.05);
+    --port-shadow-glow: 0 10px 40px rgba(0, 0, 0, 0.06);
+    --port-badge-bg: rgba(37, 99, 235, 0.05);
+    --port-badge-border: rgba(37, 99, 235, 0.2);
+    --port-text-glow: none;
+    --port-avatar-text: #fff;
+    --port-quote-mark: rgba(37, 99, 235, 0.05);
 }
 
 #portfolio-main {
@@ -32,7 +56,6 @@
     background-color: var(--port-bg);
     color: var(--port-text);
     transition: background-color 0.4s ease, color 0.4s ease;
-    padding-bottom: 4rem;
     overflow-x: hidden;
 }
 
@@ -186,8 +209,8 @@
 }
 
 .port-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 240, 255, 0.3);
     border-color: var(--port-primary);
 }
 
@@ -311,7 +334,7 @@
     display: none;
     background: transparent;
     border: none;
-    color: var(--port-text, #333);
+    color: #000; /* Statically dark to contrast with light header */
     cursor: pointer;
     padding: 5px;
     z-index: 1000;
