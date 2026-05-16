@@ -25,7 +25,6 @@
 </head>
 
 <body>
-    <!-- Portfolio Preloader -->
     <div id="port-preloader">
         <div class="google-loader">
             <svg viewBox="25 25 50 50">
@@ -38,15 +37,14 @@
     <!-- Glassmorphism Navbar -->
     <header class="main-header">
         <div class="container">
-            <div class="header-content"
-                style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+            <div class="header-content" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0;">
                 <a href="index.html" class="logo-link">
                     <img loading="lazy" src="ASSETS/css/wht_no_bg45_logo.svg" alt="45|STDioS Logo" class="logo-image"
                         width="120" />
                 </a>
 
                 <nav class="desktop-nav">
-                    <ul class="nav-links" style="display: flex; list-style: none; gap: 20px; font-weight: 500;">
+                    <ul class="nav-links" style="display: flex; list-style: none; gap: 20px; font-weight: 500; margin: 0; padding: 0;">
                         <li><a href="index.html" class="nav-item">Home</a></li>
                         <li><a href="about.html" class="nav-item">About</a></li>
                         <li><a href="projects.html" class="nav-item">Projects</a></li>
@@ -71,10 +69,8 @@
                         <img src="ASSETS/css/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" width="30" height="30"
                             alt="Search Icon" />
                     </button>
-                    <button class="mobile-menu-btn" aria-label="Toggle Menu"
-                        style="display: none; background:none; border:none; cursor:pointer;">
-                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <button class="mobile-menu-btn" aria-label="Toggle Menu" style="display: none; background:none; border:none; cursor:pointer;">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="3" y1="12" x2="21" y2="12"></line>
                             <line x1="3" y1="6" x2="21" y2="6"></line>
                             <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -83,17 +79,6 @@
                 </div>
             </div>
         </div>
-
-        <nav class="mobile-nav">
-            <ul class="mobile-nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Project Grid</a></li>
-                <li><a href="blog.html">Blogs</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-                <li><a href="test.html" class="nav-item">Software Tests</a></li>
-            </ul>
-        </nav>
     </header>
 
     <button id="portThemeToggle" aria-label="Toggle Theme">🌙</button>
@@ -208,28 +193,23 @@
         </section>
     </main>
 
-    <footer class="futuristic-footer">
+    <footer class="futuristic-footer" style="background: #1a1a1a; color: white; padding: 60px 20px;">
         <div class="port-container" style="text-align: center;">
-            <button type="button" class="port-btn port-btn-secondary back-to-top-btn"
-                onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;">
-                    <path d="M12 19V5M5 12l7-7 7 7" />
-                </svg>
+            <button type="button" class="back-to-top-btn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="background: none; border: 1px solid white; color: white; padding: 10px 20px; cursor: pointer; margin-bottom: 40px;">
                 Back to Top
             </button>
-            <div class="footer-grid">
+            <div class="footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; text-align: left;">
                 <div class="footer-col brand-col">
-                    <img loading="lazy" src="ASSETS\css\image.webp" alt="45|STDioS Logo" class="footer-logo" />
-                    <p class="footer-tagline">Open-source engineering & innovative digital solutions.<br><span
-                            class="highlight-text">Built at IIIT Kottayam.</span></p>
+                    <img loading="lazy" src="ASSETS/css/45-stdios bg removed2.png" alt="45|STDioS Logo" width="120" style="filter: brightness(0) invert(1);" />
+                    <p>Innovative digital solutions built at IIIT Kottayam.</p>
                 </div>
                 <div class="footer-col links-col">
-                    <h3 class="footer-heading">Nav Systems</h3>
+                    <h3 class="footer-heading">LinkTree</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="projects.html">Project Grid</a></li>
+                        <li><a href="test.html">Test Space</a></li>
                         <li><a href="blog.html">Blogs</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
                     </ul>
@@ -252,16 +232,12 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p class="copyright-text">This WEBSITE and its CONTENTS are developed solely for non-commercial
-                    purposes.
-                    &copy; 2026 AnandhuKrishne & 45|STDioS. All rights reserved.</p>
-                <p>Created with &hearts; in India-Bharata.</p>
+            <div class="footer-bottom" style="margin-top: 40px; border-top: 1px solid #333; padding-top: 20px;">
+                <p>&copy; 2026 AnandhuKrishne & 45|STDioS. All rights reserved.</p>
             </div>
         </div>
     </footer>
     <script src="ASSETS/js/new.js"></script>
     <script src="ASSETS/js/portfolio.js"></script>
 </body>
-
 </html>
