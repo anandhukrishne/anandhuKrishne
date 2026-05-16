@@ -3,7 +3,7 @@
 </p>
 <p align="center">anandhukrishne.tech 🚀</p>
 <p align="center">
-<img src="https://anandhukrishne.tech/ASSETS/css/wht_no_bg45_logo.svg" alt="Anandhu Krishne/45 STDioS Logo" width="120px" style="border-radius: 50%;">
+<img src="https://anandhukrishne.tech/images/wht_no_bg45_logo.svg" alt="Anandhu Krishne/45 STUDioS Logo" width="120px" style="border-radius: 50%;">
 
 
 <b>Personal Portfolio & Engineering Log</b>
@@ -28,7 +28,7 @@ I'm AnandhuKrishne, a IIIT Kottayam undergraduate studying cyber security. I hav
 </a>
 </p>
 
-Frontend: HTML5, Vanilla CSS3, PHP, JavaScript (45|STDioS Design System).
+Frontend: HTML5, Vanilla CSS3, PHP, JavaScript (45|STUDioS Design System).
 
 Systems & DSA: C, MIPS Assembly, Shunting Yard Algorithm.
 
@@ -49,7 +49,7 @@ Learning MIPS: Comprehending SW and LW Instructions
 
 Data Structures: Applying the Shunting Yard Algorithm to Postfix Expression Evaluation
 
-Web Development: <a href="https://anandhukrishne.tech/blog.html/wicvcssf45s"> Why I Chose Vanilla CSS for 45|STDioS </a>
+Web Development: <a href="https://anandhukrishne.tech/blog.html/wicvcssf45s"> Why I Chose Vanilla CSS for 45|STUDioS </a>
 
 📊 GitHub Stats
 <p align="left">
@@ -87,7 +87,7 @@ Open index.html in your browser.
 
 No build steps required — keeping it lightweight and vanilla😉.
 
-© 2026 AnandhuKrishne & 45|STDioS. Created with ♥ in India. 
+© 2026 AnandhuKrishne & 45|STUDioS. Created with ♥ in India. 
 
 <p align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=100&section=footer" />

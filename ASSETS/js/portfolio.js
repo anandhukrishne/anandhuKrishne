@@ -9,6 +9,49 @@ window.addEventListener('load', () => {
     }
 });
 
+// Floating Header & Back to Top Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('.main-header');
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    
+    if (header) {
+        // Natural header is at top: 10px; so threshold is approx header height + 20px
+        // But to be precise, we get the initial absolute bottom of the header + 10px
+        const initialTriggerPoint = header.offsetTop + header.offsetHeight + 10;
+
+        let ticking = false;
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    if (window.scrollY > initialTriggerPoint) {
+                        header.classList.add('is-floating');
+                        if (backToTopBtn) {
+                            backToTopBtn.style.display = 'flex';
+                        }
+                    } else {
+                        header.classList.remove('is-floating');
+                        if (backToTopBtn) {
+                            backToTopBtn.style.display = 'none';
+                        }
+                    }
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }, { passive: true });
+    }
+
+    if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+});
+
 // Theme switch logic (scoped to portfolio styles)
 const portThemeToggle = document.getElementById('portThemeToggle');
 const htmlEl = document.documentElement;

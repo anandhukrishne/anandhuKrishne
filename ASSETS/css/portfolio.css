@@ -2,53 +2,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
 
 :root {
-    --port-bg: #030712; /* Deep Dark Space */
-    --port-surface: #0f172a; /* Slate 900 */
+    --port-bg: #030712;
+    /* Deep Dark Space */
+    --port-surface: #0f172a;
+    /* Slate 900 */
     --port-text: #f8fafc;
     --port-text-muted: #94a3b8;
-    --port-primary: #00f0ff; /* Neon Electric Blue */
-    --port-primary-hover: #00b8ff;
-    --port-tertiary: #fbff00; /* Neon Lemon Yellow */
-    --port-border: #1e293b;
+    --port-primary: #00a1ff;
+    /* 45|STUDioS Brand Blue (Exact) */
+    --port-primary-hover: #33b4ff;
+    --port-tertiary: #ff0000;
+    /* 45|STUDioS Brand Red (Exact) */
+    --port-border: #475569;
+    /* Even higher contrast border */
     --port-glass-bg: rgba(15, 23, 42, 0.6);
-    --port-glass-border: rgba(0, 240, 255, 0.15);
-    
+    --port-glass-border: rgba(0, 161, 255, 0.8);
+    /* Highly visible blue border */
+
     /* Advanced UI Variables */
     --port-card-bg: rgba(15, 23, 42, 0.7);
     --port-card-bg-light: rgba(15, 23, 42, 0.4);
-    --port-card-border: rgba(0, 240, 255, 0.2);
-    --port-card-border-light: rgba(255, 255, 255, 0.05);
-    --port-shadow-glow: 0 10px 40px rgba(0, 0, 0, 0.5);
-    --port-badge-bg: rgba(0, 240, 255, 0.05);
-    --port-badge-border: rgba(0, 240, 255, 0.3);
-    --port-text-glow: 0 0 30px rgba(0, 240, 255, 0.6);
+    --port-card-border: rgba(0, 161, 255, 0.6);
+    /* Brighter border in dark mode */
+    --port-card-border-light: rgba(255, 255, 255, 0.25);
+    --port-shadow-glow: 0 10px 40px rgba(0, 161, 255, 0.2);
+    /* Colored glow */
+    --port-badge-bg: rgba(0, 161, 255, 0.1);
+    --port-badge-border: rgba(0, 161, 255, 0.4);
+    --port-text-glow: 0 0 30px rgba(0, 161, 255, 0.8);
     --port-avatar-text: #000;
-    --port-quote-mark: rgba(0, 240, 255, 0.08);
+    --port-quote-mark: rgba(0, 161, 255, 0.15);
 }
 
 [data-port-theme="light"] {
-    --port-bg: #f8fafc;
+    --port-bg: #f0f4f8;
+    /* Slightly cooler, richer background than plain white/gray */
     --port-surface: #ffffff;
-    --port-text: #020617;
-    --port-text-muted: #475569;
-    --port-primary: #2563eb; /* Vibrant energetic blue */
-    --port-primary-hover: #1d4ed8;
-    --port-tertiary: #eab308;
-    --port-border: #cbd5e1;
-    --port-glass-bg: rgba(255, 255, 255, 0.85);
-    --port-glass-border: rgba(0, 0, 0, 0.05);
-    
+    --port-text: #0f172a;
+    --port-text-muted: #64748b;
+    --port-primary: #00a1ff;
+    /* 45|STUDioS Brand Blue (Exact) */
+    --port-primary-hover: #008be5;
+    --port-tertiary: #ff0000;
+    /* 45|STUDioS Brand Red (Exact) */
+    --port-border: #94a3b8;
+    /* Darker border for light mode contrast */
+    --port-glass-bg: rgba(255, 255, 255, 0.4);
+    --port-glass-border: rgba(0, 161, 255, 0.5);
+    /* More visible glass border */
+
     /* Advanced UI Variables for Light Mode */
     --port-card-bg: #ffffff;
     --port-card-bg-light: #ffffff;
-    --port-card-border: rgba(37, 99, 235, 0.15);
+    --port-card-border: rgba(0, 161, 255, 0.3);
+    /* Stronger border for crispness */
     --port-card-border-light: rgba(0, 0, 0, 0.05);
-    --port-shadow-glow: 0 10px 40px rgba(0, 0, 0, 0.06);
-    --port-badge-bg: rgba(37, 99, 235, 0.05);
-    --port-badge-border: rgba(37, 99, 235, 0.2);
+    --port-shadow-glow: 0 15px 35px rgba(0, 161, 255, 0.12);
+    /* Dynamic blue shadow instead of dull grey */
+    --port-badge-bg: rgba(0, 161, 255, 0.08);
+    --port-badge-border: rgba(0, 161, 255, 0.3);
     --port-text-glow: none;
     --port-avatar-text: #fff;
-    --port-quote-mark: rgba(37, 99, 235, 0.05);
+    --port-quote-mark: rgba(0, 161, 255, 0.1);
 }
 
 #portfolio-main {
@@ -57,20 +72,89 @@
     color: var(--port-text);
     transition: background-color 0.4s ease, color 0.4s ease;
     overflow-x: hidden;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* Typography */
-#portfolio-main h1, #portfolio-main h2, #portfolio-main h3 {
+#portfolio-main h1,
+#portfolio-main h2,
+#portfolio-main h3,
+#portfolio-main h4 {
     margin-top: 0;
     font-weight: 700;
+    color: var(--port-text);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
 }
 
 #portfolio-main p {
     color: var(--port-text-muted);
+    font-weight: 400;
+    line-height: 1.8;
 }
 
 #portfolio-main a {
     text-decoration: none;
+}
+
+/* Premium Wordmark */
+.wordmark-anandhu {
+    color: var(--port-text);
+}
+
+.wordmark-krishne {
+    background: linear-gradient(110deg,
+            var(--port-primary) 0%,
+            #a200ff 40%,
+            var(--port-tertiary) 80%,
+            var(--port-primary) 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    animation: premium-gradient-shine 6s linear infinite;
+    text-shadow: none;
+}
+
+@keyframes premium-gradient-shine {
+    0% {
+        background-position: 0% center;
+    }
+
+    100% {
+        background-position: 200% center;
+    }
+}
+
+.static-gradient-text {
+    background: linear-gradient(135deg, var(--port-primary) 0%, #a200ff 50%, var(--port-tertiary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    text-shadow: none;
+}
+
+[data-port-theme="light"] .wordmark-krishne {
+    background: linear-gradient(110deg,
+            var(--port-primary) 0%,
+            #c800ff 40%,
+            var(--port-tertiary) 80%,
+            var(--port-primary) 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+[data-port-theme="light"] .static-gradient-text {
+    background: linear-gradient(135deg, var(--port-primary) 0%, #c800ff 50%, var(--port-tertiary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 /* Utilities */
@@ -85,36 +169,40 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.875rem 1.75rem;
-    border-radius: 9999px;
+    padding: 1rem 2.2rem;
+    border-radius: 12px;
     font-weight: 600;
-    transition: all 0.3s ease;
+    font-size: 1.05rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
     border: none;
     cursor: pointer;
+    letter-spacing: 0.5px;
 }
 
 .port-btn-primary {
     background: var(--port-primary);
     color: #fff !important;
-    box-shadow: 0 4px 14px rgba(14, 165, 233, 0.4);
+    box-shadow: 0 4px 15px var(--port-badge-bg);
 }
 
 .port-btn-primary:hover {
     background: var(--port-primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(14, 165, 233, 0.6);
+    box-shadow: 0 8px 25px var(--port-badge-bg);
 }
 
 .port-btn-secondary {
-    background: transparent;
+    background: var(--port-card-bg-light);
     color: var(--port-text) !important;
-    border: 2px solid var(--port-border);
+    border: 1px solid var(--port-card-border-light);
+    backdrop-filter: blur(4px);
 }
 
 .port-btn-secondary:hover {
+    background: var(--port-card-bg);
     border-color: var(--port-primary);
-    color: var(--port-primary) !important;
+    transform: translateY(-2px);
 }
 
 /* Hero Section */
@@ -238,7 +326,8 @@
 .port-card-title {
     font-size: 1.5rem;
     margin-bottom: 0.75rem;
-    color: var(--port-tertiary); /* Lemon Yellow Accent */
+    color: var(--port-tertiary);
+    /* Lemon Yellow Accent */
 }
 
 .port-card-desc {
@@ -253,31 +342,27 @@
     margin: 0;
 }
 
-/* Theme Toggle inside Portfolio */
-#portThemeToggle {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: var(--port-surface);
-    border: 1px solid var(--port-border);
-    color: var(--port-text);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    cursor: pointer;
-    z-index: 1000;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+#portThemeToggle:hover {
+    transform: scale(1.1);
+}
+
+.mobile-menu-btn {
+    color: var(--port-text) !important;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu-btn svg {
+    stroke: var(--port-text) !important;
+}
+
+/* Dynamic Header Logo */
+.dynamic-header-logo {
+    content: url("../../images/g3.svg");
     transition: all 0.3s ease;
 }
 
-#portThemeToggle:hover {
-    background: var(--port-primary);
-    color: #fff;
-    transform: scale(1.1);
+[data-port-theme="light"] .dynamic-header-logo {
+    content: url("../../images/wht_no_bg45_logo.svg");
 }
 
 /* Preloader */
@@ -310,17 +395,35 @@
     animation: dash 1.5s ease-in-out infinite;
 }
 
-.google-loader .track { stroke: var(--port-border); }
-.google-loader .spin { stroke: var(--port-primary); }
+.google-loader .track {
+    stroke: var(--port-border);
+}
+
+.google-loader .spin {
+    stroke: var(--port-primary);
+}
 
 @keyframes dash {
-    0% { stroke-dasharray: 1, 150; stroke-dashoffset: 0; }
-    50% { stroke-dasharray: 90, 150; stroke-dashoffset: -35; }
-    100% { stroke-dasharray: 90, 150; stroke-dashoffset: -124; }
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
 }
 
 @keyframes spin-svg {
-    100% { transform: rotate(360deg); }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .google-loader svg {
@@ -334,7 +437,8 @@
     display: none;
     background: transparent;
     border: none;
-    color: #000; /* Statically dark to contrast with light header */
+    color: #000;
+    /* Statically dark to contrast with light header */
     cursor: pointer;
     padding: 5px;
     z-index: 1000;
@@ -386,11 +490,11 @@
     .desktop-nav {
         display: none !important;
     }
-    
+
     .mobile-menu-btn {
         display: block !important;
     }
-    
+
     .mobile-nav {
         display: block;
     }
@@ -402,7 +506,7 @@
         width: 100%;
         gap: 0.75rem;
     }
-    
+
     .port-hero-actions .port-btn {
         width: 100%;
         justify-content: center;

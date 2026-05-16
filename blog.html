@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Blog - 45|STDioS</title>
-    <link rel="icon" type="image/x-icon" href="ASSETS/css/Untitled design.jpg" />
+    <title>Blog - 45|STUDioS</title>
+    <link rel="icon" type="image/x-icon" href="images/Group 5.png" />
     <link href="ASSETS/css/vanilla.css" rel="stylesheet" />
     <link href="ASSETS/css/portfolio.css" rel="stylesheet" />
     <link href="ASSETS/css/futuristic-footer.css" rel="stylesheet" />
@@ -22,13 +22,14 @@
         </div>
     </div>
 
+    <!-- Glassmorphism Navbar -->
     <header class="main-header">
         <div class="container">
             <div class="header-content"
                 style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
                 <a href="index.html" class="logo-link">
-                    <img loading="lazy" src="ASSETS/css/wht_no_bg45_logo.svg" alt="45|STDioS Logo" class="logo-image"
-                        width="120" />
+                    <img loading="lazy" src="images/wht_no_bg45_logo.svg" alt="45|STUDioS Logo"
+                        class="logo-image dynamic-header-logo" width="120" />
                 </a>
 
                 <nav class="desktop-nav">
@@ -53,10 +54,8 @@
                             }
                         }
                     </style>
-                    <button aria-label="Search" style="background:none; border:none; cursor:pointer;">
-                        <img src="ASSETS/css/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" width="30" height="30"
-                            alt="Search Icon" />
-                    </button>
+                    <button id="portThemeToggle" aria-label="Toggle Theme"
+                        style="background:none; border:none; cursor:pointer; font-size: 1.5rem; display: flex; align-items: center; justify-content: center; height: 32px; width: 32px;">🌙</button>
                     <button class="mobile-menu-btn" aria-label="Toggle Menu"
                         style="display: none; background:none; border:none; cursor:pointer;">
                         <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor"
@@ -82,13 +81,19 @@
         </nav>
     </header>
 
-    <button id="portThemeToggle" aria-label="Toggle Theme">🌙</button>
+    <button id="backToTopBtn" class="port-btt-floating" aria-label="Back to Top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7" />
+        </svg>
+    </button>
 
     <main id="portfolio-main">
         <section class="port-hero" style="min-height: 40vh;">
             <div class="port-container" style="text-align: center;">
                 <div class="port-hero-content">
-                    <h1 class="port-title" style="font-size: 3rem;">Engineering Manifest</h1>
+                    <h1 class="port-title" style="font-size: 3rem;">Engineering <span
+                            class="static-gradient-text">Manifest</span></h1>
                     <p class="port-subtitle">Articles on Architecture, Data Structures, & Clean Code.</p>
                 </div>
             </div>
@@ -127,7 +132,7 @@
                             <span
                                 style="display:inline-block; font-size: 0.8rem; text-transform:uppercase; font-weight:600; color:var(--port-primary); margin-bottom: 0.5rem;">Web
                                 Engineering</span>
-                            <h3 class="port-card-title">Why 45|STDioS Opts for Core Vanilla CSS</h3>
+                            <h3 class="port-card-title">Why 45|STUDioS Opts for Core Vanilla CSS</h3>
                             <p class="port-card-desc">Lessons analyzed from moving away from utility-heavy frameworks
                                 toward structured variable-driven design models.</p>
                             <a href="#" class="port-btn port-btn-secondary" style="margin-top: 1rem;">Execute Read →</a>
@@ -141,17 +146,13 @@
 
     <footer class="futuristic-footer">
         <div class="port-container" style="text-align: center;">
-            <button type="button" class="port-btn port-btn-secondary back-to-top-btn"
-                onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;">
-                    <path d="M12 19V5M5 12l7-7 7 7" />
-                </svg>
-                Back to orbit
-            </button>
+
             <div class="footer-grid">
                 <div class="footer-col brand-col">
-                    <img loading="lazy" src="ASSETS\css\image.webp" alt="45|STDioS Logo" class="footer-logo" />
+                    <h2 class="footer-logo-text"
+                        style="font-size: 2.2rem; font-weight: 800; letter-spacing: 2px; margin: 0; padding-bottom: 15px">
+                        <span class="wordmark-anandhu" style="font-weight: 600;">Anandhu</span><span
+                            class="wordmark-krishne" style="font-weight: 600;">Krishne</span></h2>
                     <p class="footer-tagline">Open-source engineering & innovative digital solutions.<br><span
                             class="highlight-text">Built at IIIT Kottayam.</span></p>
                 </div>
@@ -172,27 +173,28 @@
                     <p>Mobile: <a href="tel:+918320382088" class="link-glow">+91 8320382088</a></p>
                     <div class="social-mesh">
                         <a href="https://github.com/anandhukrishne" target="_blank" aria-label="GitHub"><img
-                                src="ASSETS/css/github-svgrepo-com.svg" alt="GitHub"></a>
+                                src="images/github-svgrepo-com.svg" alt="GitHub"></a>
                         <a href="https://x.com/AnandhuKrishne" target="_blank" aria-label="X (Twitter)"><img
-                                src="ASSETS/css/twitter-1-svgrepo-com.svg" alt="X"></a>
+                                src="images/twitter-1-svgrepo-com.svg" alt="X"></a>
                         <a href="https://www.linkedin.com/in/anandhukrishne/" target="_blank" aria-label="LinkedIn"><img
-                                src="ASSETS/css/linkedin-svgrepo-com.svg" alt="LinkedIn"></a>
+                                src="images/linkedin-svgrepo-com.svg" alt="LinkedIn"></a>
 
                         <a href="https://www.instagram.com/anandhu.krishne/" target="_blank" aria-label="Instagram"><img
-                                src="ASSETS/css/instagram-svgrepo-com.svg" alt="Instagram"></a>
+                                src="images/instagram-svgrepo-com.svg" alt="Instagram"></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p class="copyright-text">This WEBSITE and its CONTENTS are developed solely for non-commercial
                     purposes.
-                    &copy; 2026 AnandhuKrishne & 45|STDioS. All rights reserved.</p>
-                <p>Created with &hearts; in India-Bharata.</p>
+                    &copy; 2026 <span class="wordmark-anandhu" style="font-weight: 600;">Anandhu</span><span
+                        class="wordmark-krishne" style="font-weight: 600;">Krishne</span> & 45|STUDioS. All rights
+                    reserved.</p>
+                <p>Created with <span class="wordmark-krishne">❤️</span> in India-Bharata.</p>
             </div>
         </div>
     </footer>
-    <script src="ASSETS/js/new.js"></script>
-    <script src="ASSETS/js/portfolio.js"></script>
+    <script src="ASSETS/js/portfolio.js" defer></script>
 </body>
 
 </html>
