@@ -5,17 +5,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Engineering Projects - 45|STUDioS</title>
-    <link rel="canonical" href="https://anandhukrishne.tech/" />
+    <link rel="canonical" href="https://anandhukrishne.tech/projects.html" />
     <meta name="author" content="AnandhuKrishne" />
-    <meta name="description"
-        content="I created this website to showcase my portfolio, test run projects, and share my work with the world." />
+    <meta name="description" content="Explore the diverse projects and technical deployments by Anandhu Krishne, from autonomous drones to high-performance web systems." />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Engineering Projects - 45|STUDioS" />
     <meta property="og:description"
-        content="I created this website to showcase my portfolio, test run projects, and share my work with the world." />
+        content="Explore the diverse projects and technical deployments by Anandhu Krishne, from autonomous drones to high-performance web systems." />
     <meta property="og:image" content="https://anandhukrishne.tech/images/Group 5.png" />
     <meta property="og:url" content="https://anandhukrishne.tech/projects.html" />
     <link rel="icon" type="image/x-icon" href="images/Group 5.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link href="ASSETS/css/vanilla.css" rel="stylesheet" />
     <link href="ASSETS/css/portfolio.css" rel="stylesheet" />
     <link href="ASSETS/css/futuristic-footer.css" rel="stylesheet" />
@@ -35,10 +39,10 @@
     <header class="main-header">
         <div class="container">
             <div class="header-content"
-                style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0;">
                 <a href="index.html" class="logo-link">
-                    <img loading="lazy" src="images/wht_no_bg45_logo.svg" alt="45|STUDioS Logo"
-                        class="logo-image dynamic-header-logo" width="120" />
+                    <img src="images/wht_no_bg45_logo.svg" alt="45|STUDioS Logo"
+                        class="logo-image dynamic-header-logo" width="120" height="30" />
                 </a>
 
                 <nav class="desktop-nav">
@@ -141,8 +145,7 @@
                             <h3 class="port-card-title">Raamanuj Sales Architecture</h3>
                             <p class="port-card-desc">High-performance commercial frontend designed for secure login,
                                 registration, and database connectivity. Optimized for scale and speed.</p>
-                            <a href="#" class="port-btn port-btn-secondary" style="margin-top: 10px;">View
-                                Architecture</a>
+                             <a href="#" class="port-btn port-btn-secondary" style="margin-top: 10px;" data-project-id="ramaanuj">View Complete Challenges</a>
                         </div>
                     </article>
 
@@ -150,13 +153,13 @@
                     <article class="port-card">
                         <figure class="port-card-img-wrapper">
                             <img loading="lazy" src="images/75214713_713380305818648_7894135974353960960_n.jpg"
-                                alt="PRAASH Branding" class="port-card-img" />
+                                alt="VYNTRA Dashboard" class="port-card-img" />
                         </figure>
                         <div class="port-card-body">
-                            <h3 class="port-card-title">PRAASH Visual Identity</h3>
-                            <p class="port-card-desc">Complete visual identity and digital footprint for PRAASH and its
-                                sister-entity Bhoomika. A masterclass in brand cohesion and design systems.</p>
-                            <a href="#" class="port-btn port-btn-secondary" style="margin-top: 10px;">View Branding</a>
+                            <h3 class="port-card-title">VYNTRA IoT Dashboard</h3>
+                            <p class="port-card-desc">Real-time IoT environmental monitoring dashboard for smart campus
+                                infrastructure. Tracks temperature, humidity, air quality, and energy consumption across sensor networks.</p>
+                             <a href="#" class="port-btn port-btn-secondary" style="margin-top: 10px;" data-project-id="vyntra">View System Architecture</a>
                         </div>
                     </article>
 
@@ -179,6 +182,21 @@
             </div>
         </section>
     </main>
+
+    <!-- Project Details Modal -->
+    <dialog id="projectModal" class="blog-modal">
+        <div class="modal-wrapper">
+            <div class="modal-header">
+                <h2 id="projectModalTitle">Project Title</h2>
+                <button class="project-modal-close modal-close" aria-label="Close Modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="projectModalBody">
+                    <!-- Dynamic Content Injected Here -->
+                </div>
+            </div>
+        </div>
+    </dialog>
 
     <footer class="futuristic-footer">
         <div class="port-container" style="text-align: center;">
@@ -231,6 +249,7 @@
         </div>
     </footer>
     <script src="ASSETS/js/portfolio.js" defer></script>
+    <script src="ASSETS/js/projects-modal.js" defer></script>
 </body>
 
 </html>

@@ -1,5 +1,9 @@
-/* Import Google Fonts for the portfolio section */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+/* Google Font import removed from here and moved to HTML for performance */
+
+/* Global overflow prevention — eliminates inline <style> blocks across all pages */
+body {
+    overflow-x: hidden;
+}
 
 :root {
     --port-bg: #030712;
@@ -66,8 +70,18 @@
     --port-quote-mark: rgba(0, 161, 255, 0.1);
 }
 
-#portfolio-main {
+body {
     font-family: 'Outfit', sans-serif;
+    background-color: var(--port-bg);
+    color: var(--port-text);
+    transition: background-color 0.4s ease, color 0.4s ease;
+    overflow-x: hidden;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#portfolio-main {
     background-color: var(--port-bg);
     color: var(--port-text);
     transition: background-color 0.4s ease, color 0.4s ease;
@@ -510,5 +524,301 @@
     .port-hero-actions .port-btn {
         width: 100%;
         justify-content: center;
+    }
+}
+
+/* --- Blog Modal Styles --- */
+.blog-modal {
+    border: none;
+    border-radius: 24px;
+    padding: 0;
+    width: 80vw !important;
+    min-width: 80vw;
+    max-height: 85vh;
+    background: var(--port-surface);
+    color: var(--port-text);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* Prevent dialog from scrolling, wrapper scrolls */
+}
+
+.blog-modal::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+}
+
+.modal-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 85vh;
+}
+
+.modal-header {
+    padding: 2rem 2.5rem;
+    border-bottom: 1px solid var(--port-border);
+    position: sticky;
+    top: 0;
+    background: var(--port-surface);
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.modal-close {
+    background: var(--port-badge-bg);
+    border: 1px solid var(--port-badge-border);
+    color: var(--port-text);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.modal-close:hover {
+    background: var(--port-primary);
+    color: #fff;
+    transform: rotate(90deg);
+}
+
+.modal-body {
+    padding: 2.5rem;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    scrollbar-color: var(--port-primary) transparent;
+}
+
+.modal-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background-color: var(--port-primary);
+    border-radius: 10px;
+}
+
+#modalCategory {
+    color: var(--port-primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+#modalTitle {
+    font-size: 2.2rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+#modalContent {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--port-text-muted);
+}
+
+/* Prevent background scroll when modal is open */
+html.modal-open, body.modal-open {
+    overflow: hidden !important;
+    height: 100% !important;
+    touch-action: none; /* Disable touch gestures on background */
+}
+
+.blog-modal {
+    touch-action: auto; /* Re-enable touch for modal */
+}
+
+/* Modal theme override if user wants light background specifically */
+[data-port-theme="light"] .blog-modal {
+    background: #ffffff;
+}
+[data-port-theme="light"] .modal-header {
+    background: #ffffff;
+}
+
+/* --- SPA Article View (Newspaper Layout) --- */
+
+.article-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Article Header */
+.article-header {
+    background: var(--port-surface);
+    border-bottom: 1px solid var(--port-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 15px 0;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-back-btn {
+    background: none;
+    border: none;
+    color: var(--port-text-muted);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.article-back-btn:hover {
+    color: var(--port-primary);
+}
+
+.article-logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.article-logo-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--port-text);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-left: 2px solid var(--port-primary);
+    padding-left: 10px;
+}
+
+.article-theme-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Article Main Body */
+.article-main {
+    padding: 60px 0;
+    min-height: 80vh;
+}
+
+.article-title-area {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.article-category {
+    display: inline-block;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--port-primary);
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.article-title {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    color: var(--port-text);
+    margin: 0;
+}
+
+.article-body {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--port-text);
+    font-family: 'Outfit', sans-serif;
+}
+
+.article-body p {
+    margin-bottom: 25px;
+}
+
+.article-body h2 {
+    font-size: 2rem;
+    color: var(--port-text);
+    margin: 40px 0 20px;
+    border-bottom: 1px solid var(--port-border);
+    padding-bottom: 10px;
+}
+
+.article-body h3 {
+    font-size: 1.5rem;
+    color: var(--port-text);
+    margin: 30px 0 15px;
+}
+
+.article-body code {
+    background: var(--port-badge-bg);
+    color: var(--port-primary);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+.article-body strong {
+    color: var(--port-text);
+}
+
+/* Article Footer */
+.article-footer {
+    border-top: 1px solid var(--port-border);
+    padding: 40px 0;
+    background: var(--port-surface);
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-footer-logo {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.article-copyright {
+    color: var(--port-text-muted);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.article-btt-btn {
+    background: none;
+    border: none;
+    color: var(--port-primary);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: opacity 0.3s ease;
+}
+
+.article-btt-btn:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .article-title {
+        font-size: 2.5rem;
+    }
+    .footer-flex {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
     }
 }

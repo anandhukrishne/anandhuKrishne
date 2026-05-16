@@ -19,9 +19,15 @@
     <meta property="og:url" content="https://anandhukrishne.tech/" />
 
     <link rel="icon" type="image/x-icon" href="images/Group 5.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link href="ASSETS/css/vanilla.css" rel="stylesheet" />
     <link href="ASSETS/css/portfolio.css" rel="stylesheet" />
     <link href="ASSETS/css/futuristic-footer.css" rel="stylesheet" />
+    <!-- FontAwesome for the icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -39,8 +45,8 @@
         <div class="container">
             <div class="header-content" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0;">
                 <a href="index.html" class="logo-link">
-                    <img loading="lazy" src="images/wht_no_bg45_logo.svg" alt="45|STUDioS Logo"
-                        class="logo-image dynamic-header-logo" width="120" />
+                    <img src="images/wht_no_bg45_logo.svg" alt="45|STUDioS Logo"
+                        class="logo-image dynamic-header-logo" width="120" height="30" />
                 </a>
 
                 <nav class="desktop-nav">
@@ -65,12 +71,6 @@
                             }
                         }
                     </style>
-                    <button aria-label="Search" style="background:none; border:none; cursor:pointer;">
-                        <img src="ASSETS/css/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" width="30" height="30"
-                            alt="Search Icon" />
-                    </button>
-                    <button class="mobile-menu-btn" aria-label="Toggle Menu" style="display: none; background:none; border:none; cursor:pointer;">
-                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <button id="portThemeToggle" aria-label="Toggle Theme"
                         style="background:none; border:none; cursor:pointer; font-size: 1.5rem; display: flex; align-items: center; justify-content: center; height: 32px; width: 32px;">🌙</button>
                     <button class="mobile-menu-btn" aria-label="Toggle Menu"
@@ -85,6 +85,17 @@
                 </div>
             </div>
         </div>
+
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Project Grid</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="test.html" class="nav-item">Software Tests</a></li>
+            </ul>
+        </nav>
     </header>
 
     <button id="backToTopBtn" class="port-btt-floating" aria-label="Back to Top">
@@ -143,7 +154,7 @@
                             <!-- Profile Photo Frame -->
                             <div
                                 style="position: relative; z-index: 2; width: clamp(280px, 30vw, 400px); height: clamp(280px, 30vw, 400px); border-radius: 32px; border: 1px solid var(--port-card-border); overflow: hidden; box-shadow: var(--port-shadow-glow); background: var(--port-surface);">
-                                <img src="images/ak.jpg" alt="Anandhu Krishne"
+                                <img src="images/ak.jpg" alt="Anandhu Krishne" width="400" height="400"
                                     style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                         </div>
@@ -176,8 +187,8 @@
                         style="background: var(--port-card-bg); border: 1px solid var(--port-card-border-light); border-radius: 20px; overflow: hidden; transition: transform 0.3s ease;">
                         <div
                             style="height: 200px; background: #1e293b; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-                            <img src="images/1679505260662.jpg" alt="Parakkum Thallika"
-                                style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="images/613151026_17845480833668032_2518069959230236342_n.jpg" alt="Parakkum Thallika Drone"
+                                style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" decoding="async">
                         </div>
                         <div style="padding: 2rem;">
                             <h3 style="font-size: 1.4rem; color: var(--port-text); margin-bottom: 0.8rem;">Parakkum
@@ -197,7 +208,7 @@
                         <div
                             style="height: 200px; background: #1e293b; display: flex; align-items: center; justify-content: center; overflow: hidden;">
                             <img src="images/RSAS logo.png" alt="RSAS logo"
-                                style="width: 100%; height: 100%; object-fit: cover;">
+                                style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" decoding="async">
                         </div>
                         <div style="padding: 2rem;">
                             <h3 style="font-size: 1.4rem; color: var(--port-text); margin-bottom: 0.8rem;">Raamanuj
@@ -218,15 +229,15 @@
                         style="background: var(--port-card-bg); border: 1px solid var(--port-card-border-light); border-radius: 20px; overflow: hidden; transition: transform 0.3s ease;">
                         <div
                             style="height: 200px; background: #1e293b; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-                            <img src="images/75214713_713380305818648_7894135974353960960_n.jpg" alt="PRAASH Branding"
-                                style="width: 100%; height: 100%; object-fit: cover; filter: hue-rotate(90deg);">
+                            <img src="images/75214713_713380305818648_7894135974353960960_n.jpg" alt="VYNTRA Dashboard"
+                                style="width: 100%; height: 100%; object-fit: cover; filter: hue-rotate(90deg);" loading="lazy" decoding="async">
                         </div>
                         <div style="padding: 2rem;">
-                            <h3 style="font-size: 1.4rem; color: var(--port-text); margin-bottom: 0.8rem;">PRAASH</h3>
+                            <h3 style="font-size: 1.4rem; color: var(--port-text); margin-bottom: 0.8rem;">VYNTRA</h3>
                             <p
                                 style="color: var(--port-text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
-                                Complete visual identity and digital footprint for PRAASH and sister-entity Bhoomika
-                                business.</p>
+                                Real-time IoT environmental monitoring dashboard for smart campus infrastructure
+                                and sensor networks.</p>
                             <a href="projects.html"
                                 style="color: var(--port-primary); text-decoration: none; font-weight: 600; font-size: 0.9rem;">View
                                 Details &rarr;</a>
@@ -357,25 +368,27 @@
                     <!-- Experience -->
                     <div>
                         <h2
-                            style="font-size: 2.2rem; color: var(--port-text); margin-bottom: 2.5rem; letter-spacing: -1px;">
+                            style="font-size: 2.8rem; color: var(--port-text); margin-bottom: 3.5rem; letter-spacing: -1.5px;">
                             Experiences</h2>
                         <div style="display: grid; gap: 2rem;">
                             <div
-                                style="background: var(--port-card-bg); border: 1px solid var(--port-card-border-light); border-radius: 16px; padding: 2rem; display: flex; gap: 1.5rem; align-items: start;">
+                                style="background: var(--port-card-bg); border: 1px solid var(--port-card-border-light); border-radius: 20px; padding: 2.5rem; display: flex; gap: 2rem; align-items: center; transition: all 0.3s ease; box-shadow: var(--port-shadow-glow);">
                                 <div
-                                    style="width: 60px; height: 60px; background: #000; border-radius: 12px; overflow: hidden; flex-shrink: 0;">
+                                    style="width: 80px; height: 80px; background: #000; border-radius: 16px; overflow: hidden; flex-shrink: 0; border: 1px solid var(--port-card-border);">
                                     <img src="images/1679505260662.jpg" alt="Apoorv"
                                         style="width: 100%; height: 100%; object-fit: cover;">
                                 </div>
-                                <div>
-                                    <h4 style="color: var(--port-text); font-size: 1.25rem; margin-bottom: 0.3rem;">
+                                <div style="flex-grow: 1;">
+                                    <h4 style="color: var(--port-text); font-size: 1.5rem; margin-bottom: 0.4rem;">
                                         Designer</h4>
                                     <p
-                                        style="color: var(--port-text-muted); font-size: 0.95rem; margin-bottom: 0.5rem;">
-                                        Apoorv IIIT Kottayam</p>
-                                    <p
-                                        style="color: var(--port-primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
-                                        Jan 2026 - Mar 2026 &bull; 3 mos</p>
+                                        style="color: var(--port-text-muted); font-size: 1.05rem; margin-bottom: 0.6rem; font-weight: 500;">
+                                        Apoorv &bull; IIIT Kottayam</p>
+                                    <div style="display: flex; align-items: center; gap: 10px;">
+                                        <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--port-primary);"></span>
+                                        <p style="color: var(--port-primary); font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px;">
+                                            Jan 2026 - Mar 2026</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

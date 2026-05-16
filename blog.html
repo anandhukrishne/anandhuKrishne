@@ -6,10 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Blog - 45|STUDioS</title>
+    <link rel="canonical" href="https://anandhukrishne.tech/blog.html" />
+    <meta name="author" content="AnandhuKrishne" />
     <link rel="icon" type="image/x-icon" href="images/Group 5.png" />
+    <meta name="description" content="Read the latest engineering logs, project case studies, and technical insights from Anandhu Krishne's laboratory." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Blog - 45|STUDioS" />
+    <meta property="og:description" content="Read the latest engineering logs, project case studies, and technical insights from Anandhu Krishne's laboratory." />
+    <meta property="og:image" content="https://anandhukrishne.tech/images/Group 5.png" />
+    <meta property="og:url" content="https://anandhukrishne.tech/blog.html" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link href="ASSETS/css/vanilla.css" rel="stylesheet" />
     <link href="ASSETS/css/portfolio.css" rel="stylesheet" />
     <link href="ASSETS/css/futuristic-footer.css" rel="stylesheet" />
+    <link href="ASSETS/css/blog.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -22,179 +36,143 @@
         </div>
     </div>
 
-    <!-- Glassmorphism Navbar -->
-    <header class="main-header">
-        <div class="container">
-            <div class="header-content"
-                style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-                <a href="index.html" class="logo-link">
-                    <img loading="lazy" src="images/wht_no_bg45_logo.svg" alt="45|STUDioS Logo"
-                        class="logo-image dynamic-header-logo" width="120" />
-                </a>
-
-                <nav class="desktop-nav">
-                    <ul class="nav-links" style="display: flex; list-style: none; gap: 20px; font-weight: 500;">
-                        <li><a href="index.html" class="nav-item">Home</a></li>
-                        <li><a href="about.html" class="nav-item">About</a></li>
-                        <li><a href="projects.html" class="nav-item">Projects</a></li>
-                        <li><a href="test.html" class="nav-item">Test</a></li>
-                        <li><a href="blog.html" class="nav-item">Blog</a></li>
-                    </ul>
-                </nav>
-
-                <div class="header-actions" style="display: flex; align-items: center; gap: 15px;">
-                    <style>
-                        body {
-                            overflow-x: hidden;
-                        }
-
-                        @media (max-width: 750px) {
-                            .desktop-only-icon {
-                                display: none !important;
-                            }
-                        }
-                    </style>
-                    <button id="portThemeToggle" aria-label="Toggle Theme"
-                        style="background:none; border:none; cursor:pointer; font-size: 1.5rem; display: flex; align-items: center; justify-content: center; height: 32px; width: 32px;">🌙</button>
-                    <button class="mobile-menu-btn" aria-label="Toggle Menu"
-                        style="display: none; background:none; border:none; cursor:pointer;">
-                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="3" y1="12" x2="21" y2="12"></line>
-                            <line x1="3" y1="6" x2="21" y2="6"></line>
-                            <line x1="3" y1="18" x2="21" y2="18"></line>
-                        </svg>
-                    </button>
-                </div>
+    <!-- ═══════ FIXED BROADCAST HEADER ═══════ -->
+    <header class="blog-fixed-header" id="blogHeader">
+        <div class="blog-header-inner">
+            <button id="blogBackBtn" class="blog-back-btn" aria-label="Go Back">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                <span>Back</span>
+            </button>
+            <div class="blog-logo-center">
+                <img src="images/wht_no_bg45_logo.svg" alt="45|STUDioS Logo" class="blog-logo-img dynamic-header-logo" width="100" height="25" />
+                <span class="blog-logo-divider"></span>
+                <span class="blog-logo-label">Blog</span>
             </div>
+            <button id="blogThemeToggle" class="blog-theme-btn" aria-label="Toggle Theme">&#x1F319;</button>
         </div>
-
-        <nav class="mobile-nav">
-            <ul class="mobile-nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Project Grid</a></li>
-                <li><a href="blog.html">Blogs</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-                <li><a href="test.html" class="nav-item">Software Tests</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <button id="backToTopBtn" class="port-btt-floating" aria-label="Back to Top">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 19V5M5 12l7-7 7 7" />
-        </svg>
+    <!-- ═══════ BACK TO TOP BUTTON ═══════ -->
+    <button id="blogBttBtn" class="blog-btt" aria-label="Back to Top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
     </button>
 
-    <main id="portfolio-main">
-        <section class="port-hero" style="min-height: 40vh;">
-            <div class="port-container" style="text-align: center;">
-                <div class="port-hero-content">
-                    <h1 class="port-title" style="font-size: 3rem;">Engineering <span
-                            class="static-gradient-text">Manifest</span></h1>
-                    <p class="port-subtitle">Articles on Architecture, Data Structures, & Clean Code.</p>
-                </div>
+    <!-- ═══════ VIEW 1: BLOG INDEX GRID ═══════ -->
+    <div id="blog-index-view">
+        <section class="blog-hero">
+            <div class="blog-hero-inner">
+                <h1 class="blog-hero-title">Engineering <span class="static-gradient-text">Manifest</span></h1>
+                <p class="blog-hero-sub">Case studies, architecture deep-dives, and engineering logs.</p>
             </div>
         </section>
 
-        <section class="port-section" style="padding-top: 0;">
-            <div class="port-container">
-                <div class="port-grid">
+        <section class="blog-grid-section">
+            <div class="blog-grid">
 
-                    <article class="port-card">
-                        <div class="port-card-body">
-                            <span
-                                style="display:inline-block; font-size: 0.8rem; text-transform:uppercase; font-weight:600; color:var(--port-primary); margin-bottom: 0.5rem;">Systems
-                                Architecture</span>
-                            <h3 class="port-card-title">Mastering MIPS: Understanding `sw` & `lw`</h3>
-                            <p class="port-card-desc">Deep diving into memory management and data transfer limits in
-                                pure MIPS assembly. Prep notes on cache allocation.</p>
-                            <a href="#" class="port-btn port-btn-secondary" style="margin-top: 1rem;">Execute Read →</a>
-                        </div>
-                    </article>
+                <!-- Card 1: VYNTRA -->
+                <article class="blog-card" data-slug="vyntra">
+                    <div class="blog-card-category">IoT Systems</div>
+                    <h3 class="blog-card-title">VYNTRA: Engineering a Real-Time IoT Dashboard</h3>
+                    <p class="blog-card-date">Published May 10, 2026</p>
+                    <p class="blog-card-desc">Building a real-time environmental monitoring dashboard for smart campus infrastructure using ESP32 sensors and WebSockets.</p>
+                    <button class="blog-read-btn" data-slug="vyntra">Execute Read &rarr;</button>
+                </article>
 
-                    <article class="port-card">
-                        <div class="port-card-body">
-                            <span
-                                style="display:inline-block; font-size: 0.8rem; text-transform:uppercase; font-weight:600; color:var(--port-primary); margin-bottom: 0.5rem;">Data
-                                Structures</span>
-                            <h3 class="port-card-title">Evaluating Postfix via Shunting Yard</h3>
-                            <p class="port-card-desc">A step-by-step unrolling of infix-to-postfix conversion and why
-                                AST stacks matter for compiler efficiency.</p>
-                            <a href="#" class="port-btn port-btn-secondary" style="margin-top: 1rem;">Execute Read →</a>
-                        </div>
-                    </article>
+                <!-- Card 2: Parakkum Thallika -->
+                <article class="blog-card" data-slug="parakkum-thallika">
+                    <div class="blog-card-category">Autonomous Systems</div>
+                    <h3 class="blog-card-title">Parakkum Thallika: Engineering an Autonomous Drone</h3>
+                    <p class="blog-card-date">Published April 28, 2026</p>
+                    <p class="blog-card-desc">From first flight to disaster management deployment &mdash; the engineering story behind the drone.</p>
+                    <button class="blog-read-btn" data-slug="parakkum-thallika">Execute Read &rarr;</button>
+                </article>
 
-                    <article class="port-card">
-                        <div class="port-card-body">
-                            <span
-                                style="display:inline-block; font-size: 0.8rem; text-transform:uppercase; font-weight:600; color:var(--port-primary); margin-bottom: 0.5rem;">Web
-                                Engineering</span>
-                            <h3 class="port-card-title">Why 45|STUDioS Opts for Core Vanilla CSS</h3>
-                            <p class="port-card-desc">Lessons analyzed from moving away from utility-heavy frameworks
-                                toward structured variable-driven design models.</p>
-                            <a href="#" class="port-btn port-btn-secondary" style="margin-top: 1rem;">Execute Read →</a>
-                        </div>
-                    </article>
+                <!-- Card 3: Raamanuj -->
+                <article class="blog-card" data-slug="raamanuj">
+                    <div class="blog-card-category">Web Architecture</div>
+                    <h3 class="blog-card-title">Raamanuj: Scaling a Commercial Sales Platform</h3>
+                    <p class="blog-card-date">Published April 15, 2026</p>
+                    <p class="blog-card-desc">The technical challenges of database synchronization, JWT auth, and multi-tenant architecture.</p>
+                    <button class="blog-read-btn" data-slug="raamanuj">Execute Read &rarr;</button>
+                </article>
 
-                </div>
+                <!-- Card 4: 45 STUDioS -->
+                <article class="blog-card" data-slug="45-studios">
+                    <div class="blog-card-category">Open Source</div>
+                    <h3 class="blog-card-title">45|STUDioS: The Open-Source Agency Blueprint</h3>
+                    <p class="blog-card-date">Published March 30, 2026</p>
+                    <p class="blog-card-desc">How we built an automated web suite for enrollment logic and staging environment provisioning.</p>
+                    <button class="blog-read-btn" data-slug="45-studios">Execute Read &rarr;</button>
+                </article>
+
+                <!-- Card 5: MIPS -->
+                <article class="blog-card" data-slug="mastering-mips">
+                    <div class="blog-card-category">Systems Architecture</div>
+                    <h3 class="blog-card-title">Mastering MIPS: Understanding sw &amp; lw</h3>
+                    <p class="blog-card-date">Published March 18, 2026</p>
+                    <p class="blog-card-desc">Deep diving into memory management and data transfer limits in pure MIPS assembly.</p>
+                    <button class="blog-read-btn" data-slug="mastering-mips">Execute Read &rarr;</button>
+                </article>
+
+                <!-- Card 6: Shunting Yard -->
+                <article class="blog-card" data-slug="evaluating-postfix">
+                    <div class="blog-card-category">Data Structures</div>
+                    <h3 class="blog-card-title">Evaluating Postfix via Shunting Yard</h3>
+                    <p class="blog-card-date">Published March 5, 2026</p>
+                    <p class="blog-card-desc">A step-by-step unrolling of infix-to-postfix conversion and compiler-grade stack evaluation.</p>
+                    <button class="blog-read-btn" data-slug="evaluating-postfix">Execute Read &rarr;</button>
+                </article>
+
+                <!-- Card 7: Vanilla CSS -->
+                <article class="blog-card" data-slug="vanilla-css">
+                    <div class="blog-card-category">Web Engineering</div>
+                    <h3 class="blog-card-title">Why 45|STUDioS Opts for Core Vanilla CSS</h3>
+                    <p class="blog-card-date">Published February 20, 2026</p>
+                    <p class="blog-card-desc">Lessons from moving away from utility-heavy frameworks toward structured variable-driven design.</p>
+                    <button class="blog-read-btn" data-slug="vanilla-css">Execute Read &rarr;</button>
+                </article>
+
             </div>
         </section>
-    </main>
 
-    <footer class="futuristic-footer">
-        <div class="port-container" style="text-align: center;">
-
-            <div class="footer-grid">
-                <div class="footer-col brand-col">
-                    <h2 class="footer-logo-text"
-                        style="font-size: 2.2rem; font-weight: 800; letter-spacing: 2px; margin: 0; padding-bottom: 15px">
-                        <span class="wordmark-anandhu" style="font-weight: 600;">Anandhu</span><span
-                            class="wordmark-krishne" style="font-weight: 600;">Krishne</span></h2>
-                    <p class="footer-tagline">Open-source engineering & innovative digital solutions.<br><span
-                            class="highlight-text">Built at IIIT Kottayam.</span></p>
+        <!-- Blog Index Footer -->
+        <footer class="blog-index-footer">
+            <div class="blog-footer-inner">
+                <div class="blog-footer-brand">
+                    <span class="wordmark-anandhu" style="font-weight:600;">Anandhu</span><span class="wordmark-krishne" style="font-weight:600;">Krishne</span>
                 </div>
-                <div class="footer-col links-col">
-                    <h3 class="footer-heading">Nav Systems</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Project Grid</a></li>
-                        <li><a href="blog.html">Blogs</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col connect-col">
-                    <h3 class="footer-heading">Comms Link</h3>
-                    <p>Mail: <a href="mailto:anandhukrishne@gmail.com" class="link-glow">anandhukrishne@gmail.com</a>
-                    </p>
-                    <p>Mobile: <a href="tel:+918320382088" class="link-glow">+91 8320382088</a></p>
-                    <div class="social-mesh">
-                        <a href="https://github.com/anandhukrishne" target="_blank" aria-label="GitHub"><img
-                                src="images/github-svgrepo-com.svg" alt="GitHub"></a>
-                        <a href="https://x.com/AnandhuKrishne" target="_blank" aria-label="X (Twitter)"><img
-                                src="images/twitter-1-svgrepo-com.svg" alt="X"></a>
-                        <a href="https://www.linkedin.com/in/anandhukrishne/" target="_blank" aria-label="LinkedIn"><img
-                                src="images/linkedin-svgrepo-com.svg" alt="LinkedIn"></a>
-
-                        <a href="https://www.instagram.com/anandhu.krishne/" target="_blank" aria-label="Instagram"><img
-                                src="images/instagram-svgrepo-com.svg" alt="Instagram"></a>
-                    </div>
-                </div>
+                <p class="blog-footer-copy">&copy; 2026 <span class="wordmark-anandhu" style="font-weight:600;">Anandhu</span><span class="wordmark-krishne" style="font-weight:600;">Krishne</span> &amp; 45|STUDioS. All rights reserved.</p>
             </div>
-            <div class="footer-bottom">
-                <p class="copyright-text">This WEBSITE and its CONTENTS are developed solely for non-commercial
-                    purposes.
-                    &copy; 2026 <span class="wordmark-anandhu" style="font-weight: 600;">Anandhu</span><span
-                        class="wordmark-krishne" style="font-weight: 600;">Krishne</span> & 45|STUDioS. All rights
-                    reserved.</p>
-                <p>Created with <span class="wordmark-krishne">❤️</span> in India-Bharata.</p>
+        </footer>
+    </div>
+
+    <!-- ═══════ VIEW 2: ARTICLE READER ═══════ -->
+    <div id="blog-article-view" style="display: none;">
+        <main class="article-main">
+            <article class="article-container article-content-wrapper">
+                <header class="article-title-area">
+                    <span id="articleCategory" class="article-category">Category</span>
+                    <h1 id="articleTitle" class="article-title">Article Title</h1>
+                    <p id="articleDate" class="article-date">Published January 1, 2026</p>
+                </header>
+                <div id="articleContent" class="article-body">
+                    <!-- Dynamic Content -->
+                </div>
+            </article>
+        </main>
+
+        <footer class="article-footer">
+            <div class="article-container footer-flex">
+                <div class="article-footer-logo">
+                    <span class="wordmark-anandhu" style="font-weight: 600;">Anandhu</span><span class="wordmark-krishne" style="font-weight: 600;">Krishne</span>
+                </div>
+                <p class="article-copyright">&copy; 2026 <span class="wordmark-anandhu" style="font-weight:600;">Anandhu</span><span class="wordmark-krishne" style="font-weight:600;">Krishne</span> &amp; 45|STUDioS. All rights reserved.</p>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+
     <script src="ASSETS/js/portfolio.js" defer></script>
+    <script src="ASSETS/js/blog-spa.js" defer></script>
 </body>
 
 </html>
