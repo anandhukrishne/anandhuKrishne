@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap');
 
 :root {
     --bg-color: #050505;
@@ -42,10 +42,10 @@ body {
 }
 
 .name-title {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Inter', sans-serif;
     font-size: 4.5rem;
-    font-weight: 300;
-    letter-spacing: -0.03em;
+    font-weight: 200;
+    letter-spacing: -0.04em;
     line-height: 1.1;
 }
 
@@ -57,28 +57,29 @@ body {
     letter-spacing: 0.2em;
 }
 
-.works-section {
+.works-section, .contact-section {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
 }
 
 .section-heading {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 1.8rem;
-    font-style: italic;
-    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
     border-bottom: 1px solid var(--border);
     padding-bottom: 0.75rem;
-    color: var(--text-muted);
+    color: var(--primary);
 }
 
-.works-list {
+.works-list, .contact-list {
     display: flex;
     flex-direction: column;
 }
 
-.work-item {
+.work-item, .contact-item {
     display: grid;
     grid-template-columns: 140px 1fr 140px;
     align-items: center;
@@ -89,12 +90,12 @@ body {
     transition: var(--transition);
 }
 
-.work-item:not(.offline):hover {
+.work-item:not(.offline):hover, .contact-item:hover {
     padding-left: 1.5rem;
     border-bottom-color: var(--primary);
 }
 
-.work-meta {
+.work-meta, .contact-meta {
     font-size: 0.72rem;
     font-weight: 500;
     letter-spacing: 0.1em;
@@ -102,18 +103,19 @@ body {
     text-transform: uppercase;
 }
 
-.work-title {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 1.8rem;
+.work-title, .contact-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
     font-weight: 300;
+    letter-spacing: -0.02em;
     transition: var(--transition);
 }
 
-.work-item:not(.offline):hover .work-title {
+.work-item:not(.offline):hover .work-title, .contact-item:hover .contact-title {
     color: var(--primary);
 }
 
-.work-action {
+.work-action, .contact-action {
     font-size: 0.8rem;
     text-transform: uppercase;
     font-weight: 500;
@@ -123,7 +125,7 @@ body {
     transition: var(--transition);
 }
 
-.work-item:not(.offline):hover .work-action {
+.work-item:not(.offline):hover .work-action, .contact-item:hover .contact-action {
     color: var(--primary);
     transform: translateX(8px);
 }
@@ -152,17 +154,17 @@ body {
         font-size: 3rem;
     }
     
-    .work-item {
+    .work-item, .contact-item {
         grid-template-columns: 1fr;
         gap: 0.75rem;
         padding: 1.75rem 0;
     }
     
-    .work-action, .work-action-offline {
+    .work-action, .work-action-offline, .contact-action {
         text-align: left;
     }
     
-    .work-item:not(.offline):hover {
+    .work-item:not(.offline):hover, .contact-item:hover {
         padding-left: 0.5rem;
     }
 }
