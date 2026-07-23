@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@200;300;400;500;600&display=swap');
+
+:root {
+    --bg-color: #050505;
+    --text-color: #ffffff;
+    --text-muted: #8e8e93;
+    
+    --primary: #d4af37; /* Luxury Gold */
+    --border: rgba(255, 255, 255, 0.05);
+    
+    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+.minimal-wrapper {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 12rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.name-title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 4.5rem;
+    font-weight: 300;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+}
+
+.college-subtitle {
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.works-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.section-heading {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 300;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.75rem;
+    color: var(--text-muted);
+}
+
+.works-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.work-item {
+    display: grid;
+    grid-template-columns: 140px 1fr 140px;
+    align-items: center;
+    padding: 2.5rem 0;
+    border-bottom: 1px solid var(--border);
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+.work-item:not(.offline):hover {
+    padding-left: 1.5rem;
+    border-bottom-color: var(--primary);
+}
+
+.work-meta {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.work-title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    transition: var(--transition);
+}
+
+.work-item:not(.offline):hover .work-title {
+    color: var(--primary);
+}
+
+.work-action {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    text-align: right;
+    transition: var(--transition);
+}
+
+.work-item:not(.offline):hover .work-action {
+    color: var(--primary);
+    transform: translateX(8px);
+}
+
+.work-item.offline {
+    cursor: not-allowed;
+    opacity: 0.45;
+}
+
+.work-action-offline {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .minimal-wrapper {
+        padding: 7rem 1.5rem;
+        gap: 5rem;
+    }
+    
+    .name-title {
+        font-size: 3rem;
+    }
+    
+    .work-item {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        padding: 1.75rem 0;
+    }
+    
+    .work-action, .work-action-offline {
+        text-align: left;
+    }
+    
+    .work-item:not(.offline):hover {
+        padding-left: 0.5rem;
+    }
+}
