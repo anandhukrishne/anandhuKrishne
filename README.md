@@ -23,13 +23,6 @@ With 2-mobile.html and 3-pc.html logic, responsive design is optimised for both 
 
 Including prototypes such as the Disaster Drone Management User Interface (Parakkum Thallika).
 
-<h3>Current Blog Posts</h3>
-
-<a href="https://anandhukrishne.tech/blog.html?article=raamanuj">Raamanuj: Scaling a Commercial Sales Platform</a>
-
-<a href="https://anandhukrishne.tech/blog.html?article=45-studios">45|STUDioS: The Open-Source Agency Blueprint</a>
-
-<a href="https://anandhukrishne.tech/blog.html?article=vanilla-css"> Why I Chose Vanilla CSS for 45|STUDioS </a>
 
 <h3>Contact Me:</h3>
 <p align="center"><a href="https://linkedin.com/in/anandhukrishne">
