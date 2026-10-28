@@ -33,9 +33,6 @@ A news portal that can manage articles, login of reporters, displaying news by o
 <a href="mailto:anandhukrishne@gmail.com">
 <img src="https://skillicons.dev/icons?i=gmail" alt="Email">
 </a>
-<a href="https://www.instagram.com/anandhu.krishne">
-<img src="https://skillicons.dev/icons?i=instagram" alt="Instagram">
-</a>
 <a href="https://x.com/AnandhuKrishne">
 <img src="https://skillicons.dev/icons?i=twitter" alt="X/Twitter">
 </a>
