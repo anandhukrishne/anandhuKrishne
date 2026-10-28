@@ -1,30 +1,32 @@
 <h2 align="center"><a href="https://anandhukrishne.tech">anandhukrishne.tech</a></h2>
 
-<h2 align="center">Personal Portfolio</h2>
+# Personal Portfolio
+
+It's design is optimised for both desktop and mobile interfaces.
 
 </p>
 
-<h3>Tech Stack & Tools</h3>
+## Tech Stack 
 <p align="center">
 <a href="https://skillicons.dev">
-<img src="https://skillicons.dev/icons?i=html,css,js,c,java,py,figma,git,php" />
+<img src="https://skillicons.dev/icons?i=html,css,js,c,java,py,git,php" />
 </a>
 </p>
 
+
 Programming languages and frameworks: C, HTML5, Vanilla CSS3, PHP, JavaScript, react, JAVA.
 
-Design: Figma and canva.
+## Important aspects of the website I've previously created:
 
+A webfront along with admin suite for a popular store in Kerala.
 
+A qrcode generater engine for personal and commercial uses deployable on any device running python.
 
-<h3>Important aspects of the website I've previously created:</h3>
+A news portal that can manage articles, login of reporters, displaying news by organic algorithm and publishing live articles. _(Launching Soon)_
 
-With 2-mobile.html and 3-pc.html logic, responsive design is optimised for both desktop and mobile interfaces.
+~~Including prototypes such as the Disaster Drone Management User Interface (Parakkum Thallika).~~(Cancelled)
 
-Including prototypes such as the Disaster Drone Management User Interface (Parakkum Thallika).
-
-
-<h3>Contact Me:</h3>
+## Contact Me:
 <p align="center"><a href="https://linkedin.com/in/anandhukrishne">
 <img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn">
 </a>
@@ -42,4 +44,5 @@ Including prototypes such as the Disaster Drone Management User Interface (Parak
 
 <p align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=anandhuKrishne&fontSize=70" /></p>
-<h6>© 2026 AnandhuKrishne & 45|STUDioS. Created with ♥ in India. </h6>
+
+#### (C) 2026 AnandhuKrishne. Created with in India.
