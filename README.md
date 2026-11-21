@@ -28,7 +28,7 @@ A qrcode generater engine for personal and commercial uses deployable on any dev
 
 An app that provides details of city bus going to pass through given stop in next 1.5 hrs. _(Still in development)_
 
-A news portal that can manage articles, login of reporters, displaying news by organic algorithm and publishing live articles. _(Launching Soon)_
+A news portal that can manage articles, login of reporters, displaying news by organic algorithm and publishing live articles. _(visit <a href="https://theopenbrief.app/">theopenbrief.app</a>)_
 
 ~~Including prototypes such as the Disaster Drone Management User Interface (Parakkum Thallika).~~(Cancelled)
 
